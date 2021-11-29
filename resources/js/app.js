@@ -1,19 +1,11 @@
 require('./bootstrap');
 
+import { createApp } from "vue";
 import router from "./routes";
-import VueRouter from "vue-router";
-import Vue from "vue";
+import LoginComponent from './home/loginForm.vue';
 
-window.Vue = require('vue').default;
-
-Vue.use(VueRouter);
-
-// Vue.component(
-//     'example-component', 
-//     require('./components/ExampleComponent.vue')
-// .default);
-
-const app = new Vue({
-    el: '#app',
-    router
-});
+createApp({
+    components: {
+        LoginComponent
+    }
+}).use(router).mount('#app')

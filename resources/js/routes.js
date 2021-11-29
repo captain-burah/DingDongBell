@@ -10,8 +10,9 @@ const routes = [
 ];
 
 const router = new VueRouter({
+    history: createWebHistory(),
     routes, 
-    mode: "history",
+    //mode: "history",
     // scrollBehavior (to, from, savedposition) {
     //     if (savedposition){
     //         return savedposition;
