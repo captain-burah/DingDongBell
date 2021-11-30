@@ -20,15 +20,15 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->tinyInteger('contact')->unique();
+            $table->integer('contact')->unique();
             $table->string('medium');
             $table->string('message')->nullable();
             $table->string('status');
             $table->rememberToken();
             $table->timestamps();
 
-            $table->integer('course_id')->unsigned()->index()->nullable(true);
-            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
+            $table->unsignedBigInteger('course_id')->index()->nullable();
+            $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 

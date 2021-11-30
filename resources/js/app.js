@@ -2,7 +2,7 @@ require('./bootstrap');
 
 import { createApp } from "vue";
 import router from "./routes";
-import LoginComponent from './home/loginForm.vue';
+import LoginComponent from './admin/login.vue';
 
 createApp({
     components: {

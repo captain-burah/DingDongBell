@@ -17,25 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/', function () {
-//     return view('about');
-// });
-
-// Route::get('/', function () {
-//     return view('tuition');
-// });
-
-// Route::get('/', function () {
-//     return view('course');
-// });
-
-// Route::get('/', function () {
-//     return view('instructor');
-// });
-
-// Route::get('/', function () {
-//     return view('contact');
-// });
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('admin/{any?}', function () {
+    return view('admin.admin');
+})->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('landing-page');;
