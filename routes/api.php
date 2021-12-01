@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\API\AuthController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,10 +19,13 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+Route::namespace('API')->group(function(){
 
-Route::post('register','AuthController@register');
-Route::post('login','AuthController@login');
+    Route::post('/register','AuthController@register');
+    Route::post('/login',[AuthController::class, 'login']);
 
-Route::group(['middleware'=>'jwt.verify'],function(){
-    Route::get('user','AuthController@getUser');
+    Route::group(['middleware'=>'jwt.verify'],function(){
+        Route::get('user','AuthController@getUser');
+    });
+
 });
