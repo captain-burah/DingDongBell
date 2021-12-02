@@ -1,13 +1,26 @@
 // import VueRouter from "vue-router";
 import { createWebHistory, createRouter } from "vue-router";
+import AdminLogin from './admin/login.vue';
+import AdminPanel from './admin/panel.vue';
 
 const routes = [
     
-    // {
-    //     path: "/",
-    //     component: ComingLanding,
-    //     name: "cominglanding",
-    // },
+    {
+        path: "/admin",
+        component: AdminLogin,
+        name: "admin-login",
+    },
+
+    { path: '/admin/panel', 
+        component: AdminPanel,
+        children: [
+            // {
+            //     path: '/', 
+            //     component: require('./admin/login.vue'),
+            //     name: "admin-login",
+            // },
+        ],
+    },
 ];
 
 const router = createRouter({

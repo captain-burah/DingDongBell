@@ -1,7 +1,5 @@
 @extends('admin.layout')
 
 @section('adminContent')
-    <login-component></login-component>
-  
-
+    <admin-index></admin-index>
 @endsection

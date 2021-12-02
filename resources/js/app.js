@@ -4,11 +4,11 @@ import { createApp } from "vue";
 import router from "./routes";
 import VueCookie from "vue-cookie";
 
-import LoginComponent from './admin/login.vue';
+import AdminIndex from './admin/index.vue';
 
 const app = createApp({
     components: {
-        LoginComponent
+        AdminIndex,
     }
 });
 app.use(VueCookie);
