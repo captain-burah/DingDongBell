@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Coming Soon 1</title>
+	<title>IT-Panthiya | Institute for ICT</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,7 +30,7 @@
 		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
 			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
 				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">46</span>
+					<span class="l2-txt1 p-b-9 days">27</span>
 					<span class="s2-txt4">Days</span>
 				</div>
 
@@ -55,7 +55,7 @@
 		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
 			<div class="">
 				<h1 style="font-family: 'Caveat', cursive; font-weight: 500; font-size: 3em;">IT - Panthiya </h1>
-                <h3  class="">The Institute for ICT</h3>
+                <h4 class="p-t-3">The Institute for ICT</h4>
 			</div>
 
 			<div class="p-t-50 p-b-60">
@@ -69,11 +69,11 @@
 			</div>
 
 			<div class="flex-w">
-				<a href="#" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+				<a href="https://www.facebook.com/IT.Panthiya.SL/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
 					<i class="fa fa-facebook"></i>
 				</a>
 
-				<a href="#" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
+				<a href="https://www.instagram.com/it_panthiya/?hl=en" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
 					<i class="fa fa-instagram"></i>
 				</a>
 			</div>
@@ -102,7 +102,7 @@
 			/*Endtime must be > current time*/
 			endtimeYear: 0,
 			endtimeMonth: 0,
-			endtimeDate: 46,
+			endtimeDate: 27,
 			endtimeHours: 24,
 			endtimeMinutes: 0,
 			endtimeSeconds: 0,
