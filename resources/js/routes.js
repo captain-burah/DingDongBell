@@ -2,23 +2,38 @@
 import { createWebHistory, createRouter } from "vue-router";
 import AdminLogin from './admin/login.vue';
 import AdminPanel from './admin/panel.vue';
+import Dashboard from './admin/dashboard/index.vue';
+import CourseMgt from './admin/course/index.vue';
 
 const routes = [
     
     {
         path: "/admin",
-        component: AdminLogin,
+        components: {
+            admin: AdminLogin
+        },
         name: "admin-login",
     },
 
-    { path: '/admin/panel', 
-        component: AdminPanel,
+    { path: '/admin/panel/',
+        components: {
+            admin: AdminPanel
+        },
         children: [
-            // {
-            //     path: '/', 
-            //     component: require('./admin/login.vue'),
-            //     name: "admin-login",
-            // },
+            {
+                path: '', 
+                components: {
+                    adminchild: Dashboard
+                },
+                name: "admin-dashboard",
+            },
+            {
+                path: 'course',
+                components: {
+                    adminchild: CourseMgt
+                },
+                name: "admin-course",
+            },
         ],
     },
 ];

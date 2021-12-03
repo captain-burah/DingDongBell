@@ -17,12 +17,10 @@ class CreateCoursesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('tutor')->nullable();
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->string('status');
-            $table->string('objectives')->nullable();
             $table->string('learning_outcomes')->nullable();
             $table->string('image')->default('image.png');
-            $table->integer('price')->default('0');
             $table->timestamps();
         });
     }
