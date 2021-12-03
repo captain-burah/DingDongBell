@@ -5,21 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{{ asset('images/icons/favicon.ico') }}"/>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/coming-soon/bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="vendor/coming-soon/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/coming-soon/animate/animate.css') }}">
+	<link rel="stylesheet" type="text/css" href="vendor/coming-soon/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/coming-soon/select2/select2.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="vendor/coming-soon/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -85,17 +85,17 @@
 	
 
 <!--===============================================================================================-->	
-	<script src="{{ asset('vendor/coming-soon/jquery/jquery-3.2.1.min.js') }}"></script>
+	<script src="vendor/coming-soon/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="{{ asset('vendor/coming-soon/bootstrap/js/popper.js') }}"></script>
-	<script src="{{ asset('vendor/coming-soon/bootstrap/js/bootstrap.min.js') }}"></script>
+	<script src="vendor/coming-soon/bootstrap/js/popper.js"></script>
+	<script src="vendor/coming-soon/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="{{ asset('vendor/coming-soon/select2/select2.min.js') }}"></script>
+	<script src="vendor/coming-soon/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="{{ asset('vendor/coming-soon/countdowntime/moment.min.js') }}"></script>
-	<script src="{{ asset('vendor/coming-soon/countdowntime/moment-timezone.min.js') }}"></script>
-	<script src="{{ asset('vendor/coming-soon/countdowntime/moment-timezone-with-data.min.js') }}"></script>
-	<script src="{{ asset('vendor/coming-soon/countdowntime/countdowntime.js') }}"></script>
+	<script src="vendor/coming-soon/countdowntime/moment.min.js"></script>
+	<script src="vendor/coming-soon/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/coming-soon/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/coming-soon/countdowntime/countdowntime.js"></script>
 	<script>
 		$('.cd100').countdown100({
 			/*Set Endtime here*/
@@ -112,14 +112,14 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="{{ asset('vendor/coming-soon/tilt/tilt.jquery.min.js') }}"></script>
+	<script src="vendor/coming-soon/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
 <!--===============================================================================================-->
-	<script src="{{ asset('js/coming-soon/main.js') }}"></script>
+	<script src="js/coming-soon/main.js"></script>
 
 </body>
 </html>
