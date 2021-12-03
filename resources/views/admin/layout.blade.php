@@ -21,7 +21,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet"> 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 
 </head>
@@ -38,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- JS -->
     <script>
   </script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
     <script src="https://kit.fontawesome.com/11e38db15a.js" crossorigin="anonymous"></script>
 </body>
