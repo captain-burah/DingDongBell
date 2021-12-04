@@ -1,9 +1,3 @@
-
-<!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -21,7 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet"> 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="/css/app.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 
 </head>
@@ -38,7 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- JS -->
     <script>
   </script>
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
     <script src="https://kit.fontawesome.com/11e38db15a.js" crossorigin="anonymous"></script>
 </body>

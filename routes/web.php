@@ -24,6 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //     return view('admin.admin');
 // })->name('admin');
 
-Route::get('admin/{any?}', function () {
-    return view('admin.admin');
-})->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('landing-page');;
+Route::prefix('admin')->group(function () {
+    Route::get('/{any?}', function () {
+        return view('admin.admin');
+    })->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('landing-page');
+});
+
