@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\Admin\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,7 +20,7 @@ use App\Http\Controllers\API\AuthController;
 //     return $request->user();
 // });
 
-Route::namespace('API')->group(function(){
+Route::namespace('App\Http\Controllers\API')->group(function(){
 
     Route::post('/register','AuthController@register');
     Route::post('/login',[AuthController::class, 'login']);
@@ -29,3 +30,9 @@ Route::namespace('API')->group(function(){
     });
 
 });
+
+Route::group(['middleware'=>'jwt.verify'],function(){
+    Route::apiResource('courses', 'App\Http\Controllers\Admin\CourseController');
+    Route::apiResource('users', 'App\Http\Controllers\Admin\UserController');
+});
+
