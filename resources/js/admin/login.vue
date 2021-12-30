@@ -47,7 +47,7 @@
                 <div class="mx-auto my-3 text-secondary text-center">
                     <h5 style="font-family: 'Caveat', cursive; fon-wight: 400;">
                         a work of 
-                        <a href="http://www.upwritsolutions.com" class="text-center text-decoration-none text-dark">
+                        <a href="https://www.upwritsolutions.com" class="text-center text-decoration-none text-dark">
                             UpWrit
                         </a>
                     </h5>
@@ -72,12 +72,58 @@
             });
 
             const login = async()=>{
-                let res = await axios.post(`api/login`,form);
+                let timerInterval;
+                
+                swal.fire({
+                title: 'Authenticating',
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    swal.showLoading()
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+                });
+
+                let res = await axios.post(`api/login`,form)
+                    .catch(function(error) {
+                        if (error.response && error.response.status === 401) {
+                            Toast.fire({
+                                icon: 'error',
+                                title: 'Email or Password is incorrect',
+                            }); 
+                        }
+                        else {
+                            Toast.fire({
+                                icon: 'error',
+                                title: 'Email or Password is incorrect',
+                            }); 
+                        }
+                    });
+                let token = cookies.get("access_token");
                 if(res.data.access_token){
                     cookies.set('access_token', res.data.access_token)
                     isAuthenticated.value = true;
+                    Toast.fire({
+                        icon: 'success',
+                        title: 'Signed in successfully'
+                    });
                     router.push('/admin/panel');
+                    // setTimeout(function() { 
+                        
+                    // }, 2000);
+                    
                 }
+                else if ( token == "false")  {
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                    });
+                }   
+
+                
             };
 
             const checkLogin = ()=>{
