@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\AdminController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\API\AuthController;
+//use App\Http\Controllers\Admin\LinkController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,7 +24,7 @@ use App\Http\Controllers\Admin\UserController;
 
 Route::namespace('App\Http\Controllers\API')->group(function(){
 
-    //Route::post('/register','AuthController@register');
+    Route::post('/register',[AdminController::class, 'register']) -> middleware(['assign.guard:admins']);
     Route::post('/login',[AdminController::class, 'login']) -> middleware(['assign.guard:admins']);
 
     Route::group(['middleware'=>'jwt.verify'],function(){
@@ -35,8 +37,20 @@ Route::namespace('App\Http\Controllers\API')->group(function(){
 // 	Route::post('/login',[AdminController::class, 'login']);	
 // });
 
-Route::group(['middleware'=>'jwt.verify'],function(){
+Route::group(['middleware'=>['jwt.verify', 'assign.guard:admins']],function(){
     Route::apiResource('courses', 'App\Http\Controllers\Admin\CourseController');
-    Route::apiResource('users', 'App\Http\Controllers\Admin\UserController');
+    //Route::apiResource('links', 'App\Http\Controllers\Admin\CourseController');
+    
 });
 
+Route::apiResource('users', 'App\Http\Controllers\Admin\UserController');
+
+Route::namespace('App\Http\Controllers\API')->group(function(){
+
+    //Route::post('/register','AuthController@register');
+    Route::post('/user_login',[AuthController::class, 'login']) -> middleware(['assign.guard:web']);
+
+    Route::group(['middleware'=>'jwt.verify'],function(){
+        Route::get('admin','AdminController@getUser');
+    });
+});

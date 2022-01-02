@@ -43,7 +43,21 @@ class CourseController extends Controller
         $course->status = $request->status;
         $course->learning_outcomes = $request->learning_outcomes;
         $course->image = $request->image;
-        $course->save();
+        $res = $course->save();
+
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
     }
 
     /**
@@ -77,7 +91,31 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $course = Course::find($id);
+
+        $course->name = $request->name;
+        $course->tutor = $request->tutor;
+        $course->description = $request->description;
+        $course->status = $request->status;
+        $course->learning_outcomes = $request->learning_outcomes;
+        $course->image = $request->image;
+
+        $res=$course->save();
+        
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
+
     }
 
     /**
@@ -88,6 +126,20 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $course=Course::find($id);
+        $res=$course->delete();
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
     }
 }

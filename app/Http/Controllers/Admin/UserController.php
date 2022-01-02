@@ -45,18 +45,28 @@ class UserController extends Controller
         $user->fname = $request->fname;
         $user->lname = $request->lname;
         $user->email = $request->email;
-        $user->password = bcrypt($request->password);
+        $user->password = $request->password;
         $user->contact = $request->contact;
         $user->medium = $request->medium;
         $user->message = $request->message;
         $user->status = $request->status;
-        $course->users()->save($user);
+        $res=$course->users()->save($user);
 
-        $target = User::with('course')->where('fname', $request['fname'])->get();
-
-        return response([
-            'data' => $target,
-        ]);
+        //$target = User::with('course')->where('fname', $request['fname'])->get();
+        
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
         // return User::create([
         //     'fname' => $request['fname'],
         //     'lname' => $request['lname'],
@@ -90,7 +100,33 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        $user->fname = $request->fname;
+        $user->lname = $request->lname;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->contact = $request->contact;
+        $user->medium = $request->medium;
+        $user->message = $request->message;
+        $user->status = $request->status;
+
+        $res=$user->save();
+        
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
+
     }
 
     /**
@@ -101,6 +137,20 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::find($id);
+        $res=$user->delete();
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
     }
 }

@@ -35,7 +35,7 @@ class AdminController extends Controller
             'fname' => 'required|string|between:2,100',
             'lname' => 'required|string|between:2,100',
             'email' => 'required|string|email|max:100|unique:admins',
-            'password' => 'required|confirmed|',
+            'password' => 'required',
         ]);
 
         if($validator->fails()){
@@ -46,11 +46,28 @@ class AdminController extends Controller
                     $validator->validated(),
                     ['password' => bcrypt($request->password)]
                 ));
-
-        if (! $token = JWTAuth::attempt($request->only('email','password'))) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+        
+        if ($admin){
+            return response()->json(
+                $data=[
+                    'status'=>'1',
+                    'msg'=>'success'
+                ]
+            );
         }
-        return $this->createNewToken($token);  
+        else {
+            return response()->json(
+                $data=[
+                    'status'=>'0',
+                    'msg'=>'fail'
+                ]
+            );
+        }
+
+        // if (! $token = JWTAuth::attempt($request->only('email','password'))) {
+        //     return response()->json(['error' => 'Unauthorized'], 401);
+        // }
+        // return $this->createNewToken($token);  
     }
 
     

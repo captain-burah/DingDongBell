@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
             'fname' => 'test',
             'lname' => 'lname',
             'email' => 'test@gmail.com',
-            'password' => bcrypt('password'),
+            'password' => 'password',
             'contact' => '0770291654',
             'medium' => 'english',
             'message' => 'hellow world!',
