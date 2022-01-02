@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AdminController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\API\AuthController;
-//use App\Http\Controllers\Admin\LinkController;
+use App\Http\Controllers\Admin\LinkController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -39,7 +39,7 @@ Route::namespace('App\Http\Controllers\API')->group(function(){
 
 Route::group(['middleware'=>['jwt.verify', 'assign.guard:admins']],function(){
     Route::apiResource('courses', 'App\Http\Controllers\Admin\CourseController');
-    //Route::apiResource('links', 'App\Http\Controllers\Admin\CourseController');
+    Route::apiResource('links', 'App\Http\Controllers\Admin\LinkController');
     
 });
 

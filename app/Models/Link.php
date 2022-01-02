@@ -9,6 +9,12 @@ class Link extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'description',
+        'link',
+    ];
+
     public function course()
     {
         return $this->belongsTo(Course::class);
