@@ -73,11 +73,102 @@
 </div>
 </template>
 <script>
+    import { reactive, inject, ref, onMounted } from "vue";
+    import { useRouter, useRoute } from 'vue-router'
+    import axios from 'axios';
     import courses from './allCourses.vue'
 
-    export default {
-        setup() {
-            
+    export default{
+        name: 'admin-login',
+        setup(){
+            const router = useRouter();
+            let cookies = inject('cookies');
+            let isAuthenticated = ref(false);
+            const form = reactive({
+                name: '',
+                tutor: '',
+                description: '',
+                status: '',
+                learning_outcomes: '',
+                image: '',
+            });
+
+            const login = async()=>{
+                let timerInterval;
+                
+                swal.fire({
+                title: 'Authenticating',
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    swal.showLoading()
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+                });
+
+                let res = await axios.post(`api/login`,form)
+                    .catch(function(error) {
+                        if (error.response && error.response.status === 401) {
+                            Toast.fire({
+                                icon: 'error',
+                                title: 'Email or Password is incorrect',
+                            }); 
+                        }
+                        else {
+                            Toast.fire({
+                                icon: 'error',
+                                title: 'Email or Password is incorrect',
+                            }); 
+                        }
+                    });
+                let token = cookies.get("access_token");
+                if(res.data.access_token){
+                    cookies.set('access_token', res.data.access_token)
+                    isAuthenticated.value = true;
+                    Toast.fire({
+                        icon: 'success',
+                        title: 'Signed in successfully'
+                    });
+                    router.push('/admin/panel');
+                    // setTimeout(function() { 
+                        
+                    // }, 2000);
+                    
+                }
+                else if ( token == "false")  {
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                    });
+                }   
+
+                
+            };
+
+            const checkLogin = ()=>{
+                if (cookies.get('access_token')){
+                    isAuthenticated.value = true;
+                }
+            }
+
+            const logout = ()=>{
+                if (cookies.get('access_token')){
+                    cookies.set('access_token', '')
+                    isAuthenticated.value = false;
+                }
+            }
+
+            onMounted(checkLogin);
+
+            return {
+                form,
+                login,
+                isAuthenticated,
+                logout
+            }
         },
         components: {
             courses,

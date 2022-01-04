@@ -1,6 +1,7 @@
 // import VueRouter from "vue-router";
 import { createWebHistory, createRouter } from "vue-router";
 import AdminLogin from './admin/login.vue';
+import StudentLogin from './students/login.vue';
 import AdminPanel from './admin/panel.vue';
 import Dashboard from './admin/dashboard/index.vue';
 import CourseMgt from './admin/course/index.vue';
@@ -13,6 +14,14 @@ const routes = [
             admin: AdminLogin
         },
         name: "admin-login",
+    },
+
+    {
+        path: "/students",
+        components: {
+            students: StudentLogin
+        },
+        name: "student-login",
     },
 
     { path: '/admin/panel/',

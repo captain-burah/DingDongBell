@@ -14,7 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('comingSoon.index');
+    // return view('comingSoon.index');
+    return view('front-end.index');
+});
+
+Route::get('/about', function () {
+    // return view('comingSoon.index');
+    return view('front-end.about');
+});
+
+Route::get('/course', function () {
+    // return view('comingSoon.index');
+    return view('front-end.course');
+});
+
+Route::get('/instructor', function () {
+    // return view('comingSoon.index');
+    return view('front-end.instructor');
+});
+
+Route::get('/contact', function () {
+    // return view('comingSoon.index');
+    return view('front-end.contact');
 });
 
 Auth::routes();
@@ -27,6 +48,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('admin')->group(function () {
     Route::get('/{any?}', function () {
         return view('admin.admin');
-    })->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('landing-page');
+    })->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('admin-page');
+});
+
+Route::prefix('students')->group(function () {
+    Route::get('/{any?}', function () {
+        return view('students.students');
+    })->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('student-login-page');
 });
 

@@ -5,6 +5,7 @@ import router from "./routes";
 import VueCookie from "vue-cookie";
 
 import AdminIndex from './admin/index.vue';
+import StudentIndex from './students/index.vue';
 
 //-------------- Vue SweetAlert v2-------------------------------------------------->
 import swal from 'sweetalert2';
@@ -28,6 +29,7 @@ window.Toast = Toast;
 const app = createApp({
     components: {
         AdminIndex,
+        StudentIndex
     }
 });
 app.use(VueCookie);

@@ -100,33 +100,53 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
+        try {
+            $user = User::find($id);
+            // $user->fname = $request->fname;
+            // $user->lname = $request->lname;
+            // $user->email = $request->email;
+            // $user->password = $request->password;
+            // $user->contact = $request->contact;
+            // $user->medium = $request->medium;
+            // $user->message = $request->message;
+            // $user->status = $request->status;
+            // $res=$user->save();
 
-        $user->fname = $request->fname;
-        $user->lname = $request->lname;
-        $user->email = $request->email;
-        $user->password = $request->password;
-        $user->contact = $request->contact;
-        $user->medium = $request->medium;
-        $user->message = $request->message;
-        $user->status = $request->status;
-
-        $res=$user->save();
-        
-        if ($res){
-            $data=[
-                'status'=>'1',
-                'msg'=>'success'
-            ];
+        } catch (\QueryException $e) {
+            
+            dd('Query Exception: ' . $e->getMessage());
+            
         }
-        else {
-            $data=[
-                'status'=>'0',
-                'msg'=>'fail'
-            ];
-        };
-        return response()->json($data);
+        // $user = User::find($id);
 
+        // if (!$user){
+        //     abort(404, 'User not found');
+        // }else{
+        //     $user->fname = $request->fname;
+        //     $user->lname = $request->lname;
+        //     $user->email = $request->email;
+        //     $user->password = $request->password;
+        //     $user->contact = $request->contact;
+        //     $user->medium = $request->medium;
+        //     $user->message = $request->message;
+        //     $user->status = $request->status;
+
+        //     $res=$user->save();
+            
+        //     if (!$res){
+        //         // $data=[
+        //         //     'status'=>'1',
+        //         //     'msg'=>'success'
+        //         // ];
+        //     }
+        //     else {
+        //         $data=[
+        //             'status'=>'0',
+        //             'msg'=>'fail'
+        //         ];
+        //     };
+        //     return response()->json($data);
+        // }
     }
 
     /**
