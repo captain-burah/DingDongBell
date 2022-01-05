@@ -1,10 +1,13 @@
 // import VueRouter from "vue-router";
 import { createWebHistory, createRouter } from "vue-router";
 import AdminLogin from './admin/login.vue';
-import StudentLogin from './students/login.vue';
 import AdminPanel from './admin/panel.vue';
 import Dashboard from './admin/dashboard/index.vue';
 import CourseMgt from './admin/course/index.vue';
+import StudentLogin from './students/login.vue';
+import StudentPanel from './students/panel.vue';
+import StudentDashboard from './students/dashboard.vue';
+import StudentCourses from './students/courses/mycourses.vue';
 
 const routes = [
     
@@ -14,14 +17,6 @@ const routes = [
             admin: AdminLogin
         },
         name: "admin-login",
-    },
-
-    {
-        path: "/students",
-        components: {
-            students: StudentLogin
-        },
-        name: "student-login",
     },
 
     { path: '/admin/panel/',
@@ -37,11 +32,43 @@ const routes = [
                 name: "admin-dashboard",
             },
             {
-                path: 'course',
+                path: 'courses',
                 components: {
                     adminchild: CourseMgt
                 },
                 name: "admin-course",
+            },
+        ],
+    },
+
+
+    {
+        path: "/students",
+        components: {
+            students: StudentLogin
+        },
+        name: "student-login",
+    },
+
+    {
+        path: "/students/panel",
+        components: {
+            students: StudentPanel
+        },
+        children: [
+            {
+                path: '', 
+                components: {
+                    studentchild: StudentDashboard
+                },
+                name: "student-dashboard",
+            },
+            {
+                path: '', 
+                components: {
+                    studentchild: StudentCourses
+                },
+                name: "student-courses",
             },
         ],
     },

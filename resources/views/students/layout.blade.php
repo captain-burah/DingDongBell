@@ -16,7 +16,32 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/app.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/css/sl/style.css">
+  <link rel="stylesheet" href="/css/sl/animate.css">
+  <link rel="stylesheet" href="/css/sl/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/sl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/sl/magnific-popup.css">
+  <link rel="stylesheet" href="/css/sl/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="/css/sl/jquery.timepicker.css">
+  <link rel="stylesheet" href="/css/sl/flaticon.css">
+  <style>
+    .bg-login {
+      background-image: url('images/stu/bg1.jpg');
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .bg-reg {
+      background-image: url('images/stu/bg2.jpg');
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  </style>
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -30,8 +55,21 @@
     <!-- JS -->
     <script>
   </script>
+    <script src="/js/sl/jquery.min.js"></script>
+    <script src="/js/sl/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/js/sl/popper.min.js"></script>
+    <script src="/js/sl/bootstrap.min.js"></script>
+    <script src="/js/sl/jquery.easing.1.3.js"></script>
+    <script src="/js/sl/jquery.waypoints.min.js"></script>
+    <script src="/js/sl/jquery.stellar.min.js"></script>
+    <script src="/js/sl/owl.carousel.min.js"></script>
+    <script src="/js/sl/jquery.magnific-popup.min.js"></script>
+    <script src="/js/sl/jquery.animateNumber.min.js"></script>
+    <script src="/js/sl/bootstrap-datepicker.js"></script>
+    <script src="/js/sl/scrollax.min.js"></script>
+    <script src="/js/sl/main.js"></script>
     <script src="/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+
     <script src="https://kit.fontawesome.com/11e38db15a.js" crossorigin="anonymous"></script>
 </body>
 </html>

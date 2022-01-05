@@ -1,10 +1,11 @@
 <template>
-    <div class="container vh-100 w-100 mx-auto d-flex">
+    <div class="cover-container v-100 w-100 mx-auto d-flex bg-login">
         <div class="col-md-12 login-box vh-100 d-flex mx-auto">
             <div class="col-md-6 my-auto mx-auto">
                 <div class="login-logo text-center my-4">
                     <h4><b>IT - Panthiya </b>| Institute for ICT</h4>
                 </div>
+
                 <!-- /.login-logo -->
                 <div class="card my-auto mx-auto shadow rounded-lg">
                     <div class="card-body mb-5 mx-4 login-card-body text-center">
@@ -27,23 +28,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mx-auto">
+                            <div class="row mx-auto mb-4">
                                 <div class="col-12 mx-auto">
                                     <button type="submit" class="btn btn-dark btn-block">Sign In</button>
+                                </div>
+                            </div>
+                            <div class="row mx-auto">
+                                <div class="col-12 mx-auto">
+                                    <button type="submit" class="btn btn-outline-info btn-block">Create account</button>
                                 </div>
                             </div>
                         </form>
                         <div v-else>
                             <h2>You are already logged In</h2>
-                            <router-link to="/admin/panel">Go to admin panel</router-link>
+                            <router-link to="/students/panel" class="mx-4">
+                                <button class="btn btn-dark">Go to my dashboard</button>
+                            </router-link>
                             <router-view>
 
                             </router-view>
-                            <button type="button" class="btn btn-dark" @click="logout">Logout</button>
+                            <button type="button" class="btn btn-danger mx-4" @click="logout">Logout</button>
                         </div>
                     </div>
                     <!-- /.login-card-body -->
                 </div>
+
                 <div class="mx-auto my-3 text-secondary text-center">
                     <h5 style="font-family: 'Caveat', cursive; fon-wight: 400;">
                         a work of 
@@ -86,7 +95,7 @@
                 }
                 });
 
-                let res = await axios.post(`api/login`,form)
+                let res = await axios.post(`api/user_login`,form)
                     .catch(function(error) {
                         if (error.response && error.response.status === 401) {
                             Toast.fire({
@@ -109,7 +118,7 @@
                         icon: 'success',
                         title: 'Signed in successfully'
                     });
-                    router.push('/admin/panel');
+                    router.push('/students/panel');
                     // setTimeout(function() { 
                         
                     // }, 2000);

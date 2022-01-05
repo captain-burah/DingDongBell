@@ -208,7 +208,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 		<footer class="ftco-footer ftco-no-pt">
 			<div class="container">
