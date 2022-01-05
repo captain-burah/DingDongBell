@@ -11,7 +11,7 @@
 
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="/" class="nav-link">Hom</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home මුල් පිටුව</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/course" class="nav-link">Course</a></li>
             <li class="nav-item"><a href="/instructor" class="nav-link">Instructor</a></li>
@@ -32,10 +32,10 @@
     <div class="container backInvert">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
         <div class="col-md-7 ftco-animate">
-            <span class="subheading">Welcome to StudyLab</span>
-            <h1 class="mb-4">We Are Online Platform For Make Learn</h1>
-            <p class="caps">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary">Our Course</a> <a href="#" class="btn btn-white">Learn More</a></p>
+            <span class="subheading">Welcome to IT Panthiya - Institute for ICT</span>
+            <h1 class="mb-4">To conquer the world through ICT / තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
+            <p class="caps">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය හා සම්බන්ධ වන්න.</p>
+            <p class="mb-0"><a href="#" class="btn btn-primary">Tuition Class</a> <a href="#" class="btn btn-white">Course</a></p>
         </div>
     </div>
     </div>
@@ -47,61 +47,61 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <span class="subheading">Start Learning Today</span>
-                <h2 class="mb-4">Browse Online Course Category</h2>
+                <span class="subheading">අදම ICT විෂය ඉගෙනගන්න</span>
+                <h2 class="mb-4">ඔබට අවශ්‍ය ශ්‍රේණිය පහතින් තෝරන්න</h2>
             </div>
         </div>
         <div class="row justify-content-center">
         <div class="col-md-3 col-lg-2">
             <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-1.jpg);">
             <div class="text w-100 text-center">
-                <h3>IT &amp; Software</h3>
-                <span>100 course</span>
+                <h3>උසස් පෙළ</h3>
+                <span>ICT</span>
             </div>
         </a>
     </div>
     <div class="col-md-3 col-lg-2">
         <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-9.jpg);">
         <div class="text w-100 text-center">
-            <h3>Music</h3>
-            <span>100 course</span>
+            <h3>සාමාන්‍ය පෙළ </h3>
+            <span>ICT</span>
         </div>
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
         <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-3.jpg);">
         <div class="text w-100 text-center">
-            <h3>Photography</h3>
-            <span>100 course</span>
+            <h3>9 ශ්‍රේණිය</h3>
+            <!-- <span>100 course</span> -->
         </div>
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
         <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-5.jpg);">
         <div class="text w-100 text-center">
-            <h3>Marketing</h3>
-            <span>100 course</span>
+            <h3>8 ශ්‍රේණිය</h3>
+            <!-- <span>100 course</span> -->
         </div>
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
         <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-8.jpg);">
         <div class="text w-100 text-center">
-            <h3>Health</h3>
-            <span>100 course</span>
+            <h3>7 ශ්‍රේණිය</h3>
+            <!-- <span>100 course</span> -->
         </div>
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
         <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-6.jpg);">
         <span class="text w-100 text-center">
-            <h3>Audio Video</h3>
-            <span>100 course</span>
+            <h3>6 ශ්‍රේණිය</h3>
+            <!-- <span>100 course</span> -->
         </span>
     </a>
     </div>
     <div class="col-md-12 text-center mt-5">
-        <a href="#" class="btn btn-secondary">See All Courses</a>
+        <a href="#" class="btn btn-secondary">උපකාරක පංති සඳහා පිවිසෙන්න</a>
     </div>
     </div>
     </div>
@@ -111,53 +111,53 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <span class="subheading">Start Learning Today</span>
-                <h2 class="mb-4">Pick Your Course</h2>
+                <span class="subheading">ICT විෂයට විශිෂ්ඨ සාමාර්ථයක් ලබාගන්න</span>
+                <h2 class="mb-4">පළපුරුදු සහිත දක්ෂ ගුරු මඩුල්ල</h2>
             </div>
         </div>
         <div class="row">
         <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
                 <a href="#" class="img" style="background-image: url(images/sl/work-1.jpg);">
-                    <span class="price">Software</span>
+                    <span class="price">A/L & O/L</span>
                 </a>
                 <div class="text p-4">
-                    <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-                    <p class="advisor">Advisor <span>Tony Garret</span></p>
+                    <h3><a href="#">Miss. P. M. Sanjula Nadeeshani</a></h3>
+                    <!-- <p class="advisor">Advisor <span>Tony Garret</span></p>
                     <ul class="d-flex justify-content-between">
                     <li><span class="flaticon-shower"></span>2300</li>
                     <li class="price">$199</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>
     <div class="col-md-4 ftco-animate">
         <div class="project-wrap">
             <a href="#" class="img" style="background-image: url(images/sl/work-2.jpg);">
-                <span class="price">Software</span>
+                <span class="price">Grade 09</span>
             </a>
             <div class="text p-4">
-                <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-                <p class="advisor">Advisor <span>Tony Garret</span></p>
+                <h3><a href="#">Miss. Nethuni Mallawaarachchi</a></h3>
+                <!-- <p class="advisor">Advisor <span>Tony Garret</span></p>
                 <ul class="d-flex justify-content-between">
                 <li><span class="flaticon-shower"></span>2300</li>
                 <li class="price">$199</li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     </div>
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
         <a href="#" class="img" style="background-image: url(images/sl/work-3.jpg);">
-            <span class="price">Software</span>
+            <span class="price">Grade 08</span>
         </a>
         <div class="text p-4">
-            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-            <p class="advisor">Advisor <span>Tony Garret</span></p>
+            <h3><a href="#">Miss. Subhashini Dissanayake</a></h3>
+            <!-- <p class="advisor">Advisor <span>Tony Garret</span></p>
             <ul class="d-flex justify-content-between">
             <li><span class="flaticon-shower"></span>2300</li>
             <li class="price">$199</li>
-        </ul>
+        </ul> -->
     </div>
     </div>
     </div>
@@ -165,19 +165,19 @@
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
         <a href="#" class="img" style="background-image: url(images/sl/work-4.jpg);">
-            <span class="price">Software</span>
+            <span class="price">Grade 07 & 06</span>
         </a>
         <div class="text p-4">
-            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-            <p class="advisor">Advisor <span>Tony Garret</span></p>
+            <h3><a href="#">Miss. Shyami Panangala</a></h3>
+            <!-- <p class="advisor">Advisor <span>Tony Garret</span></p>
             <ul class="d-flex justify-content-between">
             <li><span class="flaticon-shower"></span>2300</li>
             <li class="price">$199</li>
-        </ul>
+        </ul> -->
     </div>
     </div>
     </div>
-    <div class="col-md-4 ftco-animate">
+    <!-- <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
         <a href="#" class="img" style="background-image: url(images/sl/work-5.jpg);">
             <span class="price">Software</span>
@@ -191,8 +191,8 @@
         </ul>
     </div>
     </div>
-    </div>
-    <div class="col-md-4 ftco-animate">
+    </div> -->
+    <!-- <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
         <a href="#" class="img" style="background-image: url(images/sl/work-6.jpg);">
             <span class="price">Software</span>
@@ -206,7 +206,7 @@
         </ul>
     </div>
     </div>
-    </div>
+    </div> -->
     </div>
     </div>
     </section>
@@ -219,8 +219,8 @@
             <div class="block-18 d-flex align-items-center">
                 <div class="icon"><span class="flaticon-online"></span></div>
                 <div class="text">
-                <strong class="number" data-number="400">0</strong>
-                <span>Online Courses</span>
+                <strong class="number">Theory Class</strong>
+                <span>Cover the syllabus 3 months before the examination</span>
             </div>
         </div>
     </div>
@@ -228,8 +228,8 @@
         <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-graduated"></span></div>
             <div class="text">
-            <strong class="number" data-number="4500">0</strong>
-            <span>Students Enrolled</span>
+            <strong class="number">Practical Class</strong>
+            <span>Each practical will be covered during the class time</span>
         </div>
     </div>
     </div>
@@ -237,8 +237,8 @@
     <div class="block-18 d-flex align-items-center">
         <div class="icon"><span class="flaticon-instructor"></span></div>
         <div class="text">
-        <strong class="number" data-number="1200">0</strong>
-        <span>Experts Instructors</span>
+        <strong class="number">Paper Class</strong>
+        <span>25 model papers</span>
     </div>
     </div>
     </div>
@@ -246,8 +246,8 @@
     <div class="block-18 d-flex align-items-center">
         <div class="icon"><span class="flaticon-tools"></span></div>
         <div class="text">
-        <strong class="number" data-number="300">0</strong>
-        <span>Hours Content</span>
+        <strong class="number">Revision Class</strong>
+        <span>Revise each unit before the examination</span>
     </div>
     </div>
     </div>
@@ -255,7 +255,7 @@
     </div>
     </section>
 
-    <section class="ftco-section ftco-about img">
+    <!-- <section class="ftco-section ftco-about img">
     <div class="container">
         <div class="row d-flex">
             <div class="col-md-12 about-intro">
@@ -484,15 +484,15 @@
     </div>
     </div>
     </div>
-    </section>
+    </section> -->
 
 
     <section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-center pb-4">
         <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Our Blog</span>
-            <h2 class="mb-4">Recent Post</h2>
+            <span class="subheading">GCE Advanced Level</span>
+            <h2 class="mb-4">ICT “A” Project</h2>
         </div>
     </div>
     <div class="row d-flex">
@@ -508,8 +508,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p>
         </div>
-        <h3 class="heading"><a href="#">I'm not creative, Should I take this course?</a></h3>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+        <h3 class="heading"><a href="#">How should I cover theory before the examination?</a></h3>
+        <p> ICT exam is a combination of practical and theoretical questions. When it comes to practical questions, we feel quite comfortable but...</p>
         <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
     </div>
     </div>
@@ -527,8 +527,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p>
         </div>
-        <h3 class="heading"><a href="#">I'm not creative, Should I take this course?</a></h3>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+        <h3 class="heading"><a href="#">How should I complete the practical for the examination?</a></h3>
+        <p>ICT exam consists of web designing, programming and database practical. The most precious anything you have during exam is TIME. No doubt you must make best use of it while you are preparing as well as...</p>
         <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
     </div>
     </div>
@@ -545,8 +545,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p>
         </div>
-        <h3 class="heading"><a href="#">I'm not creative, Should I take this course?</a></h3>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+        <h3 class="heading"><a href="#">Why should I do 25 model papers?</a></h3>
+        <p>Practice makes a man perfect! Being prepared is imperative to stay focused and achieve the academic milestones you aim for. We know that competition is fiercely growing and...</p>
         <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
     </div>
     </div>
@@ -613,7 +613,7 @@
     <div class="col-md-12 text-center">
 
         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        A product of <a href="https://www.upwritsolutions.com/">UpWrit Solutions</a> | All rights reserved &copy;<script>document.write(new Date().getFullYear());</script> | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
     </div>
     </div>
