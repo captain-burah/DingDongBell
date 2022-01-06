@@ -11,7 +11,7 @@
 
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="/" class="nav-link">Home මුල් පිටුව</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home<br>මුල් පිටුව</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/course" class="nav-link">Course</a></li>
             <li class="nav-item"><a href="/instructor" class="nav-link">Instructor</a></li>
@@ -33,7 +33,7 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
         <div class="col-md-7 ftco-animate">
             <span class="subheading">Welcome to IT Panthiya - Institute for ICT</span>
-            <h1 class="mb-4">To conquer the world through ICT / තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
+            <h1 class="mb-4">To conquer the world through ICT / <br> තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
             <p class="caps">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය හා සම්බන්ධ වන්න.</p>
             <p class="mb-0"><a href="#" class="btn btn-primary">Tuition Class</a> <a href="#" class="btn btn-white">Course</a></p>
         </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
         <div class="col-md-3 col-lg-2">
-            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/work-1.jpg);">
+            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(\public\images\sl\DSC05224.jpg);">
             <div class="text w-100 text-center">
                 <h3>උසස් පෙළ</h3>
                 <span>ICT</span>
@@ -502,15 +502,15 @@
         </a>
         <div class="text d-block">
             <div class="meta">
-            <p>
+            <!-- <p>
                 <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 17, 2020</a>
                 <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-            </p>
+            </p> -->
         </div>
         <h3 class="heading"><a href="#">How should I cover theory before the examination?</a></h3>
-        <p> ICT exam is a combination of practical and theoretical questions. When it comes to practical questions, we feel quite comfortable but...</p>
-        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
+        <p>ICT exam is a combination of practical and theoretical questions. When it comes to practical questions, we feel quite comfortable but theory exams scare most of the students. For students, it's easier to score good marks in practical lessons than in theoretical lessons.</p>
+        <!-- <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p> -->
     </div>
     </div>
     </div>
@@ -521,15 +521,15 @@
         </a>
         <div class="text d-block">
             <div class="meta">
-            <p>
+            <!-- <p>
                 <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 17, 2020</a>
                 <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-            </p>
+            </p> -->
         </div>
         <h3 class="heading"><a href="#">How should I complete the practical for the examination?</a></h3>
-        <p>ICT exam consists of web designing, programming and database practical. The most precious anything you have during exam is TIME. No doubt you must make best use of it while you are preparing as well as...</p>
-        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
+        <div id="summary"><p class="collapse" id="collapseSummary" >ICT exam consists of web designing, programming and database practical. The most precious anything you have during exam is TIME. No doubt you must make best use of it while you are preparing as well as inside exam hall. Most candidate complain that the questions were not difficult but they could not complete all the tasks. This is most common but the most unfortunate. So be smart and make best use of those 30 minutes. Don’t try to complete everything but try to score highest by attempting all those questions that you can complete immediately. Don’t leave any question untouched.</p>
+        <p><a class="btn btn-secondary collapsed py-2 px-3" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a></p></div>
     </div>
     </div>
     </div>
@@ -539,15 +539,15 @@
         </a>
         <div class="text d-block">
             <div class="meta">
-            <p>
+            <!-- <p>
                 <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 17, 2020</a>
                 <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-            </p>
+            </p> -->
         </div>
         <h3 class="heading"><a href="#">Why should I do 25 model papers?</a></h3>
-        <p>Practice makes a man perfect! Being prepared is imperative to stay focused and achieve the academic milestones you aim for. We know that competition is fiercely growing and...</p>
-        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
+        <p>Practice makes a man perfect! Being prepared is imperative to stay focused and achieve the academic milestones you aim for. We know that competition is fiercely growing and staying ahead of your peers requires smart planning in your studies. Solving sample question papers is a smarter way to score in exams.</p>
+        <!-- <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p> -->
     </div>
     </div>
     </div>
@@ -570,7 +570,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md pt-5">
+    <!-- <div class="col-md pt-5">
         <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
         <h2 class="ftco-heading-2">Help Desk</h2>
         <ul class="list-unstyled">
@@ -582,7 +582,7 @@
             <li><a href="#" class="py-2 d-block">Call Us</a></li>
         </ul>
     </div>
-    </div>
+    </div> -->
     <div class="col-md pt-5">
     <div class="ftco-footer-widget pt-md-5 mb-4">
         <h2 class="ftco-heading-2">Recent Courses</h2>
