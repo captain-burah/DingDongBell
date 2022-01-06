@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
         <div class="col-md-3 col-lg-2">
-            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(\public\images\sl\DSC05224.jpg);">
+            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/DSC05224.jpg);">
             <div class="text w-100 text-center">
                 <h3>උසස් පෙළ</h3>
                 <span>ICT</span>
