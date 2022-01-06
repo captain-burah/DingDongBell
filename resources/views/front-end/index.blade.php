@@ -27,15 +27,15 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/sl/bg_1.jpg');  transform: scaleX(-1);">
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/sl/BWH_4102.jpg');">
     <div class="overlay"></div>
-    <div class="container backInvert">
+    <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-        <div class="col-md-7 ftco-animate">
-            <span class="subheading">Welcome to IT Panthiya - Institute for ICT</span>
-            <h1 class="mb-4">To conquer the world through ICT / <br> තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
-            <p class="caps">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය හා සම්බන්ධ වන්න.</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary">Tuition Class</a> <a href="#" class="btn btn-white">Course</a></p>
+        <div class="col-md-7 ftco-animate text-dark">
+            <span class="subheading  text-dark">Welcome to IT Panthiya - Institute for ICT</span>
+            <h1 class="mb-4  text-dark">To conquer the world through ICT  <br> තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
+            <p class="caps text-dark">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය හා සම්බන්ධ වන්න.</p>
+            <p class="mb-0 text-dark"><a href="#" class="btn btn-primary">Tuition Class</a> <a href="#" class="btn btn-white">Course</a></p>
         </div>
     </div>
     </div>
