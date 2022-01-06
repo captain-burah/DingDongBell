@@ -3922,6 +3922,9 @@ input[type="button"].btn-block {
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
 
+    .navbar-dark .navbar-brand span {
+      padding-left: 20px; }
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5); }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -8401,8 +8404,8 @@ h1, h2, h3, h4, h5,
     padding: 0; }
   .ftco-navbar-light .navbar-brand {
     color: #fff;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
+    padding-top:0;
+    padding-bottom:0; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff;
@@ -8410,7 +8413,11 @@ h1, h2, h3, h4, h5,
         padding-bottom: 1rem;
         background: transparent;
         padding-left: 0;
-        padding-right: 0; } }
+        padding-right: 0; }
+        .ftco-navbar-light .navbar-brand img {
+          width: 46px;
+          height: 46px;
+        } }
   .ftco-navbar-light .navbar-nav {
     margin-right: 1em; }
     @media (max-width: 991.98px) {
@@ -8423,7 +8430,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 1.5rem;
       padding-left: 20px;
       padding-right: 20px;
-      color: #fff;
+      color: #343a40;
       line-height: 1.3;
       font-weight: 500;
       opacity: 1 !important; }
@@ -8567,8 +8574,8 @@ h1, h2, h3, h4, h5,
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
       color: #fff;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 0;
+      padding-bottom: 0;
       padding-left: 20px; }
       @media (max-width: 991.98px) {
         .ftco-navbar-light.scrolled .navbar-brand {
@@ -8645,7 +8652,7 @@ h1, h2, h3, h4, h5,
     font-weight: 700;
     text-transform: uppercase; }
   .slider-text h1 {
-    font-size: 50px;
+    font-size: 43px;
     color: #fff;
     line-height: 1.2;
     font-weight: 700; }
@@ -8881,7 +8888,7 @@ h1, h2, h3, h4, h5,
   .project-wrap .img {
     display: block;
     width: 100%;
-    height: 270px;
+    height: 400px;
     position: relative;
     z-index: 1; }
     .project-wrap .img .price {
