@@ -38,22 +38,21 @@
             @yield('content')
         </main>
     </div>
-<script src="js/sl/jquery.min.js"></script>
-<script src="js/sl/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/sl/popper.min.js"></script>
-<script src="js/sl/bootstrap.min.js"></script>
-
-<script src="js/sl/jquery.easing.1.3.js"></script>
-<script src="js/sl/jquery.waypoints.min.js"></script>
-<script src="js/sl/jquery.stellar.min.js"></script>
-<script src="js/sl/owl.carousel.min.js"></script>
-<script src="js/sl/jquery.magnific-popup.min.js"></script>
-<script src="js/sl/jquery.animateNumber.min.js"></script>
-<script src="js/sl/bootstrap-datepicker.js"></script>
-<script src="js/sl/scrollax.min.js"></script>
+<script src="/js/sl/jquery.min.js"></script>
+<script src="/js/sl/jquery-migrate-3.0.1.min.js"></script>
+<script src="/js/sl/popper.min.js"></script>
+<script src="/js/sl/bootstrap.min.js"></script>
+<script src="/js/sl/jquery.easing.1.3.js"></script>
+<script src="/js/sl/jquery.waypoints.min.js"></script>
+<script src="/js/sl/jquery.stellar.min.js"></script>
+<script src="/js/sl/owl.carousel.min.js"></script>
+<script src="/js/sl/jquery.magnific-popup.min.js"></script>
+<script src="/js/sl/jquery.animateNumber.min.js"></script>
+<script src="/js/sl/bootstrap-datepicker.js"></script>
+<script src="/js/sl/scrollax.min.js"></script>
 {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> --}}
 {{-- <script src="js/sl/google-map.js"></script> --}}
-<script src="js/sl/main.js"></script>
+<script src="/js/sl/main.js"></script>
 
 
 </body>
