@@ -101,7 +101,7 @@
     </a>
     </div>
     <div class="col-md-12 text-center mt-5">
-        <a href="#" class="btn btn-secondary">උපකාරක පංති සඳහා පිවිසෙන්න</a>
+        <a href="#" class="btn btn-secondary" style="font-size: 20px;">උපකාරක පංති සඳහා පිවිසෙන්න</a>
     </div>
     </div>
     </div>
@@ -118,7 +118,7 @@
         <div class="row">
         <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
-                <a href="#" class="img" style="background-image: url(/images/sl/BWH_4118.jpg); height:460px;">
+                <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Sanjula.png);">
                     <span class="price">A/L & O/L</span>
                 </a>
                 <div class="text p-4">
@@ -133,7 +133,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
         <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(/images/sl/DSC05224.jpg);">
+            <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Nethuni.png);">
                 <span class="price">Grade 09</span>
             </a>
             <div class="text p-4">
@@ -148,7 +148,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/DSC05211.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Subha.png);">
             <span class="price">Grade 08</span>
         </a>
         <div class="text p-4">
@@ -164,7 +164,7 @@
 
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/DSC05170.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Shyami.png);">
             <span class="price">Grade 07 & 06</span>
         </a>
         <div class="text p-4">
@@ -211,7 +211,7 @@
     </div>
     </section>
 
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/sl/bg_4.jpg);">
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/sl/Hidden%20Banner.png);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
