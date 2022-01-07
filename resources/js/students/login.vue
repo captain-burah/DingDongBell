@@ -6,7 +6,13 @@
             </h6>
             <div class="collapse navbar-collapse bg-light" id="navbarResponsive" style="opacity: .8;">
                 <ul class="navbar-nav py-4">
-                    <li class="nav-item"><h4 class="text-dark" style="font-family: 'Raleway', sans-serif;">IT - Panthiya <br> <span class="text-capitalize">Institute for ICT</span></h4></li>
+                    <li class="nav-item">
+                        <h4 class="text-dark" style="font-family: 'Raleway', sans-serif;">
+                            <a href="/" class="text-decoration-none text-dark" >
+                                IT - Panthiya <br> <span class="text-capitalize">Institute for ICT</span>
+                            </a>
+                        </h4>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -119,7 +125,8 @@
                     });
                 let token = cookies.get("access_token");
                 if(res.data.access_token){
-                    cookies.set('access_token', res.data.access_token)
+                    cookies.set('access_token', res.data.access_token);
+                    cookies.set('user_id', res.data.user.id);
                     isAuthenticated.value = true;
                     Toast.fire({
                         icon: 'success',

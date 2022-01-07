@@ -49,8 +49,11 @@ Route::namespace('App\Http\Controllers\API')->group(function(){
 
     //Route::post('/register','AuthController@register');
     Route::post('/user_login',[AuthController::class, 'login']) -> middleware(['assign.guard:web']);
+    Route::get('/user_details/{id}',[AuthController::class, 'getUser']) -> middleware(['assign.guard:web']);
+
 
     Route::group(['middleware'=>'jwt.verify'],function(){
         Route::get('admin','AdminController@getUser');
     });
 });
+

@@ -19901,6 +19901,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 if (res.data.access_token) {
                   cookies.set('access_token', res.data.access_token);
+                  cookies.set('user_id', res.data.user.id);
                   isAuthenticated.value = true;
                   Toast.fire({
                     icon: 'success',
@@ -19968,6 +19969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -19982,7 +19984,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'student-dashboard',
   setup: function setup() {
+    var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();
+    var cookies = (0,vue__WEBPACK_IMPORTED_MODULE_1__.inject)('cookies');
+    var id = cookies.get('user_id');
     var user_details = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)([]);
+    var isAuthenticated = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false);
+    console.log(id);
 
     var getUser = /*#__PURE__*/function () {
       var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
@@ -19991,12 +19998,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_2___default().get('api/');
+                if (!cookies.get('user_id')) {
+                  _context.next = 4;
+                  break;
+                }
 
-              case 2:
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default().get("api/user_details/".concat(id)).then(function (response) {
+                  console.log(response.data);
+                  user_details.value = response.data.user;
+                });
+
+              case 3:
                 res = _context.sent;
-                user_details.value = res.data;
 
               case 4:
               case "end":
@@ -20011,9 +20025,30 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       };
     }();
 
-    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(getUser());
+    var checkLogin = function checkLogin() {
+      if (cookies.get('access_token')) {
+        isAuthenticated.value = true;
+      } else {
+        router.push('/students');
+      }
+    };
+
+    var logout = function logout() {
+      if (cookies.get('access_token')) {
+        cookies["delete"]('access_token');
+        cookies["delete"]('user_id');
+        isAuthenticated.value = false;
+        router.push('/students');
+      }
+    };
+
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(function () {
+      checkLogin();
+      getUser();
+    });
     return {
-      user_details: user_details
+      user_details: user_details,
+      logout: logout
     };
   }
 });
@@ -20544,7 +20579,7 @@ var _hoisted_1 = {
   "class": "cover-container v-100 w-100 mx-auto d-flex"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-login\" id=\"sideNav\"><h6 class=\"navbar-brand text-center mx-auto\"><span class=\"d-block d-lg-none text-center mx-auto\" style=\"font-family:&#39;Raleway&#39;, sans-serif;\">IT - Panthiya | Institute for ICT</span></h6><div class=\"collapse navbar-collapse bg-light\" id=\"navbarResponsive\" style=\"opacity:.8;\"><ul class=\"navbar-nav py-4\"><li class=\"nav-item\"><h4 class=\"text-dark\" style=\"font-family:&#39;Raleway&#39;, sans-serif;\">IT - Panthiya <br> <span class=\"text-capitalize\">Institute for ICT</span></h4></li></ul></div></nav>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-login\" id=\"sideNav\"><h6 class=\"navbar-brand text-center mx-auto\"><span class=\"d-block d-lg-none text-center mx-auto\" style=\"font-family:&#39;Raleway&#39;, sans-serif;\">IT - Panthiya | Institute for ICT</span></h6><div class=\"collapse navbar-collapse bg-light\" id=\"navbarResponsive\" style=\"opacity:.8;\"><ul class=\"navbar-nav py-4\"><li class=\"nav-item\"><h4 class=\"text-dark\" style=\"font-family:&#39;Raleway&#39;, sans-serif;\"><a href=\"/\" class=\"text-decoration-none text-dark\"> IT - Panthiya <br> <span class=\"text-capitalize\">Institute for ICT</span></a></h4></li></ul></div></nav>", 1);
 
 var _hoisted_3 = {
   "class": "col-md-12 login-box vh-100 d-flex mx-auto"
@@ -20687,52 +20722,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "navbar navbar-expand-lg navbar-dark bg-dark fixed-top",
+  id: "sideNav"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"sideNav\"><a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\"><span class=\"d-block d-lg-none\">Clarence Taylor</span><span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\"></span></a><button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div class=\"collapse navbar-collapse\" id=\"navbarResponsive\"><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#about\">About</a></li><li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#experience\">My Courses</a></li></ul></div></nav>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\"><span class=\"d-block d-lg-none\">IT Panthiya</span><span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"/images/sl/IT පන්තිය logo.png\" alt=\"...\"></span></a><button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>", 2);
 
-var _hoisted_2 = {
+var _hoisted_4 = {
+  "class": "collapse navbar-collapse",
+  id: "navbarResponsive"
+};
+var _hoisted_5 = {
+  "class": "navbar-nav"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "nav-item my-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "nav-link js-scroll-trigger",
+  href: "#about"
+}, "About")], -1
+/* HOISTED */
+);
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "nav-item my-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "nav-link js-scroll-trigger",
+  href: "#mycourses"
+}, "My Courses")], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
   "class": "container-fluid p-0"
 };
-var _hoisted_3 = {
+var _hoisted_9 = {
   "class": "resume-section",
   id: "about"
 };
-var _hoisted_4 = {
+var _hoisted_10 = {
   "class": "resume-section-content"
 };
-var _hoisted_5 = {
+var _hoisted_11 = {
   "class": "mb-0"
 };
-var _hoisted_6 = {
+var _hoisted_12 = {
   "class": "text-primary"
 };
-var _hoisted_7 = {
+var _hoisted_13 = {
   "class": "subheading mb-5"
 };
-var _hoisted_8 = {
+var _hoisted_14 = {
   href: "mailto:name@email.com"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"lead mb-5\">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p><div class=\"social-icons\"><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-linkedin-in\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-github\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-twitter\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-facebook-f\"></i></a></div>", 2);
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"lead mb-5\">You can now view your registered courses below within a click. </p><div class=\"social-icons\"><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-linkedin-in\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-github\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-twitter\"></i></a><a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-facebook-f\"></i></a></div>", 2);
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
   "class": "m-0"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"resume-section\" id=\"experience\"><div class=\"resume-section-content\"><h2 class=\"mb-5\">Experience</h2><div class=\"d-flex flex-column flex-md-row justify-content-between mb-5\"><div class=\"flex-grow-1\"><h3 class=\"mb-0\">Senior Web Developer</h3><div class=\"subheading mb-3\">Intelitec Solutions</div><p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p></div><div class=\"flex-shrink-0\"><span class=\"text-primary\">March 2013 - Present</span></div></div><div class=\"d-flex flex-column flex-md-row justify-content-between mb-5\"><div class=\"flex-grow-1\"><h3 class=\"mb-0\">Web Developer</h3><div class=\"subheading mb-3\">Intelitec Solutions</div><p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p></div><div class=\"flex-shrink-0\"><span class=\"text-primary\">December 2011 - March 2013</span></div></div><div class=\"d-flex flex-column flex-md-row justify-content-between mb-5\"><div class=\"flex-grow-1\"><h3 class=\"mb-0\">Junior Web Designer</h3><div class=\"subheading mb-3\">Shout! Media Productions</div><p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p></div><div class=\"flex-shrink-0\"><span class=\"text-primary\">July 2010 - December 2011</span></div></div><div class=\"d-flex flex-column flex-md-row justify-content-between\"><div class=\"flex-grow-1\"><h3 class=\"mb-0\">Web Design Intern</h3><div class=\"subheading mb-3\">Shout! Media Productions</div><p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p></div><div class=\"flex-shrink-0\"><span class=\"text-primary\">September 2008 - June 2010</span></div></div></div></section><hr class=\"m-0\">", 2);
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"resume-section\" id=\"mycourses\"><div class=\"resume-section-content\"><h2 class=\"mb-5\">O/L Grade 10</h2><div class=\"accordion\" id=\"accordionExample\"><div class=\"card bg-light\"><div class=\"card-header bg-dark\" id=\"headingOne\"><h2 class=\"mb-0\"><button class=\"btn btn-link btn-block text-left collapsed text-decoration-none\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><h3 class=\"mb-0 text-light\">Lesson 01: Logic Gates</h3></button></h2></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\"><div class=\"card-body\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis tortor nec elit mattis ultricies. Vivamus pulvinar consectetur mauris, eget viverra lacus laoreet at. Curabitur eu varius nisi, eu eleifend felis. Integer ut auctor purus. Maecenas mollis faucibus tortor, ac ultrices mi ornare quis. Phasellus eget nunc luctus, malesuada enim vel, ultrices felis. Ut placerat felis tempor massa tincidunt tempor. Morbi ut mi ac purus tincidunt euismod malesuada vel orci. <button class=\"btn btn-warning btn-block btn-lg shadow border border-dark\">Click here to join zoom</button></div></div></div><div class=\"card\"><div class=\"card-header bg-dark\" id=\"headingTwo\"><h2 class=\"mb-0\"><button class=\"btn btn-link btn-block text-left collapsed text-decoration-none\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\"><h3 class=\"mb-0 text-light\">Lesson 02: Programming</h3></button></h2></div><div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordionExample\"><div class=\"card-body\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis tortor nec elit mattis ultricies. Vivamus pulvinar consectetur mauris, eget viverra lacus laoreet at. Curabitur eu varius nisi, eu eleifend felis. Integer ut auctor purus. Maecenas mollis faucibus tortor, ac ultrices mi ornare quis. Phasellus eget nunc luctus, malesuada enim vel, ultrices felis. Ut placerat felis tempor massa tincidunt tempor. Morbi ut mi ac purus tincidunt euismod malesuada vel orci. <button class=\"btn btn-warning btn-block btn-lg shadow border border-dark\">Click here to join zoom</button></div></div></div></div><!-- &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between mb-5&quot;&gt;\r\n                        &lt;div class=&quot;flex-grow-1&quot;&gt;\r\n                            &lt;h3 class=&quot;mb-0&quot;&gt;A/L Grade 12&lt;/h3&gt;\r\n                            &lt;div class=&quot;subheading mb-3&quot;&gt;Logic Gates&lt;/div&gt;\r\n                            &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;\r\n                        &lt;/div&gt;\r\n                        &lt;div class=&quot;flex-shrink-0&quot;&gt;&lt;span class=&quot;text-primary&quot;&gt;17&lt;/span&gt;&lt;/div&gt;\r\n                    &lt;/div&gt; --></div></section><hr class=\"m-0\">", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation"), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.fname) + " ", 1
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_5, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "btn btn-danger mx-4 my-5",
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $setup.logout && $setup.logout.apply($setup, arguments);
+    })
+  }, "Logout")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.fname) + " ", 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.lname), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.lname), 1
   /* TEXT */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.contact) + " ", 1
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Contact: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.contact) + " | Email: ", 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.email), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.user_details.email), 1
   /* TEXT */
-  )]), _hoisted_9])]), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Experience"), _hoisted_12])]);
+  )]), _hoisted_15])]), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Experience"), _hoisted_18])]);
 }
 
 /***/ }),

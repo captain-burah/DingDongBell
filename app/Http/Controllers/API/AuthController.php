@@ -56,9 +56,22 @@ class AuthController extends Controller
         ]);
     }
 
-    public function getUser(Request $request)
+    public function getUser($id)
     {
-        return response()->json($request->user());
+        $user=User::find($id);
+        if ($user){
+            $data=[
+                'user'=>$user,
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
     }
 
     public function refresh() {
