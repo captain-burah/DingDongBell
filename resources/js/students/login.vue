@@ -1,16 +1,23 @@
 <template>
-    <div class="cover-container v-100 w-100 mx-auto d-flex bg-login">
+    <div class="cover-container v-100 w-100 mx-auto d-flex">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-login" id="sideNav">
+            <h6 class="navbar-brand text-center mx-auto">
+                <span class="d-block d-lg-none text-center mx-auto" style="font-family: 'Raleway', sans-serif;">IT - Panthiya | Institute for ICT</span>
+            </h6>
+            <div class="collapse navbar-collapse bg-light" id="navbarResponsive" style="opacity: .8;">
+                <ul class="navbar-nav py-4">
+                    <li class="nav-item"><h4 class="text-dark" style="font-family: 'Raleway', sans-serif;">IT - Panthiya <br> <span class="text-capitalize">Institute for ICT</span></h4></li>
+                </ul>
+            </div>
+        </nav>
         <div class="col-md-12 login-box vh-100 d-flex mx-auto">
             <div class="col-md-6 my-auto mx-auto">
-                <div class="login-logo text-center my-4">
-                    <h4><b>IT - Panthiya </b>| Institute for ICT</h4>
-                </div>
 
                 <!-- /.login-logo -->
                 <div class="card my-auto mx-auto shadow rounded-lg">
                     <div class="card-body mb-5 mx-4 login-card-body text-center">
-                        <h2 class="login-box-msg my-4">Student Login</h2>
-
+                        
+                        <h4 class="login-box-msg my-4">Student Login Form</h4>
                         <form @submit.prevent="login" v-if="isAuthenticated == false">
                             <div class="input-group mb-4">
                                 <input type="email" class="form-control" placeholder="Email" v-model="form.email">
