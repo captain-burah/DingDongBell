@@ -4,7 +4,7 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/"> <img src="images/sl/IT පන්තිය logo.png" alt="logo" height="78px" width="78px"><span>IT - Panthiya</span> </a>
+        <a class="navbar-brand" href="/"> <img src="/images/sl/IT පන්තිය logo.png" alt="logo" height="78px" width="78px"><span>IT - Panthiya</span> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
     </button>
@@ -27,7 +27,7 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/sl/BWH_4102.jpg');">
+    <div class="hero-wrap js-fullheight" style="background-image: url('/images/sl/BWH_4102.jpg');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
         <div class="col-md-3 col-lg-2">
-            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/AL%20ICT.jpg);">
+            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/AL%20ICT.jpg);">
             <div class="text w-100 text-center">
                 <h3>උසස් පෙළ</h3>
                 <span>ICT</span>
@@ -61,7 +61,7 @@
         </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/OL%20ICT.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/OL%20ICT.jpg);">
         <div class="text w-100 text-center">
             <h3>සාමාන්‍ය පෙළ </h3>
             <span>ICT</span>
@@ -69,7 +69,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/Grade%2009.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2009.jpg);">
         <div class="text w-100 text-center">
             <h3>9 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -77,7 +77,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/Grade%2008.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2008.jpg);">
         <div class="text w-100 text-center">
             <h3>8 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -85,7 +85,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/Grade%2007.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2007.jpg);">
         <div class="text w-100 text-center">
             <h3>7 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -93,7 +93,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/Grade%2006.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2006.jpg);">
         <span class="text w-100 text-center">
             <h3>6 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -118,7 +118,7 @@
         <div class="row">
         <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
-                <a href="#" class="img" style="background-image: url(images/sl/BWH_4118.jpg); height:460px;">
+                <a href="#" class="img" style="background-image: url(/images/sl/BWH_4118.jpg); height:460px;">
                     <span class="price">A/L & O/L</span>
                 </a>
                 <div class="text p-4">
@@ -133,7 +133,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
         <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/sl/DSC05224.jpg);">
+            <a href="#" class="img" style="background-image: url(/images/sl/DSC05224.jpg);">
                 <span class="price">Grade 09</span>
             </a>
             <div class="text p-4">
@@ -148,7 +148,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(images/sl/DSC05211.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/DSC05211.jpg);">
             <span class="price">Grade 08</span>
         </a>
         <div class="text p-4">
@@ -164,7 +164,7 @@
 
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(images/sl/DSC05170.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/DSC05170.jpg);">
             <span class="price">Grade 07 & 06</span>
         </a>
         <div class="text p-4">
@@ -211,7 +211,7 @@
     </div>
     </section>
 
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/sl/bg_4.jpg);">
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/sl/bg_4.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -498,7 +498,7 @@
     <div class="row d-flex">
     <div class="col-lg-4 ftco-animate">
         <div class="blog-entry">
-        <a href="blog-single.html" class="block-20" style="background-image: url('images/sl/Theory.jpg');">
+        <a href="blog-single.html" class="block-20" style="background-image: url('/images/sl/Theory.jpg');">
         </a>
         <div class="text d-block">
             <div class="meta">
@@ -517,7 +517,7 @@
 
     <div class="col-lg-4 ftco-animate">
         <div class="blog-entry">
-        <a href="blog-single.html" class="block-20" style="background-image: url('images/sl//Practical.jpg');">
+        <a href="blog-single.html" class="block-20" style="background-image: url('/images/sl//Practical.jpg');">
         </a>
         <div class="text d-block">
             <div class="meta">
@@ -535,7 +535,7 @@
     </div>
     <div class="col-lg-4 ftco-animate">
         <div class="blog-entry">
-        <a href="blog-single.html" class="block-20" style="background-image: url('images/sl/Model%20Paper.jpg');">
+        <a href="blog-single.html" class="block-20" style="background-image: url('/images/sl/Model%20Paper.jpg');">
         </a>
         <div class="text d-block">
             <div class="meta">
