@@ -9724,7 +9724,7 @@ textarea.form-control {
         color: black; }
 
        #summary p.collapse:not(.show) {
-          height: 200px !important;
+          height: 285px !important;
           overflow: hidden;
         
           display: -webkit-box;
@@ -9733,7 +9733,7 @@ textarea.form-control {
       }
       
       #summary p.collapsing {
-          min-height: 200px !important;
+          min-height: 285px !important;
       }
       
       #summary a.collapsed:after  {
