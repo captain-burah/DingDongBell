@@ -28,13 +28,13 @@
     <!-- END nav -->
 
     <div class="hero-wrap js-fullheight" style="background-image: url('/images/sl/BWH_4102.jpg');">
-    <div class="overlay"></div>
+    <!-- <div class="overlay"></div> -->
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
         <div class="col-md-7 ftco-animate text-dark">
             <span class="subheading  text-dark">Welcome to IT Panthiya - Institute for ICT</span>
-            <h1 class="mb-4  text-dark">To conquer the world through ICT  <br> තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
-            <p class="caps text-dark">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය හා සම්බන්ධ වන්න.</p>
+            <h1 class="mb-4  text-dark">To conquer the world through ICT<br>තොරතුරු තාක්ෂණයෙන් ලොව ජයගන්නට</h1>
+            <p class="caps text-dark">ICT විෂය ප්‍රයෝගිකව මනාව හදාරා, ඔබගේ ජීවිතයේ<br>සාර්ථකම මාවත නිර්මාණය කරගැනීමට ICT විෂය සඳහාම<br>පමණක් වෙන්වූ ලංකාවේ එකම ICT අධ්‍යාපන ආයතනය<br>හා සම්බන්ධ වන්න.</p>
             <p class="mb-0 text-dark"><a href="#" class="btn btn-primary">Tuition Class</a> <a href="#" class="btn btn-white">Course</a></p>
         </div>
     </div>
@@ -101,7 +101,7 @@
     </a>
     </div>
     <div class="col-md-12 text-center mt-5">
-        <a href="#" class="btn btn-secondary">උපකාරක පංති සඳහා පිවිසෙන්න</a>
+        <a href="#" class="btn btn-secondary" style="font-size: 20px;">උපකාරක පංති සඳහා පිවිසෙන්න</a>
     </div>
     </div>
     </div>
@@ -118,7 +118,7 @@
         <div class="row">
         <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
-                <a href="#" class="img" style="background-image: url(/images/sl/BWH_4118.jpg); height:460px;">
+                <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Sanjula.png);">
                     <span class="price">A/L & O/L</span>
                 </a>
                 <div class="text p-4">
@@ -133,7 +133,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
         <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(/images/sl/DSC05224.jpg);">
+            <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Nethuni.png);">
                 <span class="price">Grade 09</span>
             </a>
             <div class="text p-4">
@@ -148,7 +148,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/DSC05211.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Subha.png);">
             <span class="price">Grade 08</span>
         </a>
         <div class="text p-4">
@@ -164,7 +164,7 @@
 
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/DSC05170.jpg);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Shyami.png);">
             <span class="price">Grade 07 & 06</span>
         </a>
         <div class="text p-4">
@@ -211,7 +211,7 @@
     </div>
     </section>
 
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/sl/bg_4.jpg);">
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/sl/Hidden%20Banner.png);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -508,8 +508,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p> -->
         </div>
-        <h3 class="heading"><a href="#">How should I cover theory before the examination?</a></h3>
-        <p>ICT exam is a combination of practical and theoretical questions. When it comes to practical questions, we feel quite comfortable but theory exams scare most of the students. For students, it's easier to score good marks in practical lessons than in theoretical lessons.</p>
+        <h3 class="heading"><a href="#">විභාගයට පෙර සිද්ධාන්ත කොටස් ආවරණය කළ යුත්තේ කෙසේද?</a></h3>
+        <p style="line-height: 1.6;">ICT විභාගය යනු ප්‍රායෝගික සහ සිද්ධාන්ත ප්‍රශ්නවල එකතුවකි. ප්‍රායෝගික ප්‍රශ්න සම්බන්ධයෙන් ගත් කල, අපට තරමක් සුවපහසු බවක් දැනෙන නමුත් සිද්ධාන්ත කොටස් බොහෝ සිසුන් බිය ගන්වයි. සිසුන්ට, සිද්ධාන්ත පාඩම් වලට වඩා ප්‍රායෝගික පාඩම් වලින් හොඳ ලකුණු ලබා ගැනීම පහසු වේ. නමුත් කෙටි සටහන් සහ ආදර්ශ ප්‍රශ්න පත්‍ර මගින් සිද්ධාන්ත කොටස් ආවරණය කිරීම මගින් ඉතා හොඳ ප්‍රතිඵල ලබාගත හැකිවේ.</p>
         <!-- <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p> -->
     </div>
     </div>
@@ -527,8 +527,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p> -->
         </div>
-        <h3 class="heading"><a href="#">How should I complete the practical for the examination?</a></h3>
-        <div id="summary"><p class="collapse" id="collapseSummary" >ICT exam consists of web designing, programming and database practical. The most precious anything you have during exam is TIME. No doubt you must make best use of it while you are preparing as well as inside exam hall. Most candidate complain that the questions were not difficult but they could not complete all the tasks. This is most common but the most unfortunate. So be smart and make best use of those 30 minutes. Don’t try to complete everything but try to score highest by attempting all those questions that you can complete immediately. Don’t leave any question untouched.</p>
+        <h3 class="heading"><a href="#">විභාගය සඳහා Practical සම්පූර්ණ කළ යුත්තේ කෙසේද?</a></h3>
+        <div id="summary"><p class="collapse" id="collapseSummary" style="line-height: 1.6;" >ICT විභාගය වෙබ් අඩවි නිර්මාණය, ක්‍රමලේඛනය සහ දත්ත සමුදා කලමනාකරණය යන ප්‍රායෝගික ක්‍රියාකාරකම් වලින් සමන්විත වේ. විභාගය අතරතුර ඔබට ඇති වටිනාම දෙය කාලය වන බව ඔබ දන්නා කරුණකි. ඔබ සූදානම් වීමේදී මෙන්ම විභාග ශාලාව තුළදීද ඔබ එයින් උපරිම ප්‍රයෝජන ගත යුතු බවට සැකයක් නැත. බොහෝ සිසුන් මැසිවිලි නගන්නේ ප්‍රශ්න සංකීර්ණ නොවූන නමුත් ඔවුන්ට සියලුම ප්‍රශ්න සම්පූර්ණ කිරීමට නොහැකි වූ බව පවසමින් ය. මෙය වඩාත් සුලභ නමුත් අවාසනාවකි. ඒ නිසා බුද්ධිමත්ව එම විනාඩි 30න් උපරිම ප්‍රයෝජනය ගත යුතුය. සෑම ප්‍රායෝගික හා සිද්ධාන්ත ප්‍රශ්න සම්පූර්ණ කිරීමට නොහැකි වුවත්, ඔබට සම්පූර්ණ කළ හැකි ප්‍රශ්න සියල්ල ආවරණය කිරීමෙන් ඉහළම ලකුණු ලබා ගැනීමට උත්සාහ කරන්න. මේ සඳහා ඔබ අනිවාර්යයෙන්ම ප්‍රයෝගික ක්‍රියාකාරකම් සිදු කර තිබීම අත්‍යාවශ්‍ය වේ.</p>
         <p><a class="btn btn-secondary collapsed py-2 px-3" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a></p></div>
     </div>
     </div>
@@ -545,8 +545,8 @@
                 <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
             </p> -->
         </div>
-        <h3 class="heading"><a href="#">Why should I do 25 model papers?</a></h3>
-        <p>Practice makes a man perfect! Being prepared is imperative to stay focused and achieve the academic milestones you aim for. We know that competition is fiercely growing and staying ahead of your peers requires smart planning in your studies. Solving sample question papers is a smarter way to score in exams.</p>
+        <h3 class="heading"><a href="#">ඔබ ආදර්ශ ප්‍රශ්න පත්‍ර 25ක් ආවරණ කළ යුත්තේ ඇයි?</a></h3>
+        <p style="line-height: 1.6;">පුහුණුව මිනිසා පරිපූර්ණ කරයි! අවධානයෙන් සිටීමට සහ ඔබ ඉලක්ක කරන ප්‍රතිඵල සාක්ෂාත් කර ගැනීමට සූදානම් වීම අත්‍යවශ්‍ය වේ. තරඟකාරිත්වය දරුණු ලෙස වර්ධනය වන අතර ඔබේ සම වයසේ මිතුරන්ට වඩා ඉදිරියෙන් සිටීමට ඔබේ අධ්‍යයන කටයුතු වලදී දක්ෂ ලෙස සැලසුම් කිරීම අවශ්‍ය බව අපි දනිමු. ආදර්ශ ප්‍රශ්න පත්‍ර පෙරහුරුව විභාගවලින් ලකුණු ලබා ගැනීමට වඩාත් සාර්ථක ක්‍රමයකි. අප පංතියේ මාස 12ක් පුරාවට ක්‍රියාත්මක වන ආදර්ශ ප්‍රශ්න පත්‍ර මාලාව මගින් සිසුන් තුල ආත්ම විශ්වාසය ගොඩනගන අතර විශිෂ්ඨ ප්‍රතිඵල සඳහා යොමු කරයි.</p>
         <!-- <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p> -->
     </div>
     </div>
