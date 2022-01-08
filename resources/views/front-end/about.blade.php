@@ -54,7 +54,7 @@
        </div>
      </div>
    </div>
-   <div class="col-md-6 pl-md-5 py-5">
+   <div class="col-md-6 pl-md-5">
     <div class="row justify-content-start pb-3">
       <div class="col-md-12 heading-section ftco-animate">
        <span class="subheading">Enhanced Your Skills</span>
@@ -239,7 +239,7 @@
     <div class="img"  style="background-image: url(images/sl/Hidden%20banner.png);">
      <div class="overlay"></div>
      <h2>IT PANTHIYA ONLINE LEARNING CENTER</h2>
-     <p>අපගේ ONLINE LEARNING CENTER හරහා ලංකාවේ ඕනෑම ප්‍රදේශයක සිසුන්ට නිවසේ සිට ICT විෂය හැදෑරීමට හැකි වේ</p>
+     <p style="font-size: 1.1em;">අපගේ ONLINE LEARNING CENTER හරහා ලංකාවේ ඕනෑම ප්‍රදේශයක සිසුන්ට නිවසේ සිට ICT විෂය හැදෑරීමට හැකි වේ</p>
      <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">ලියාපදිංචි වන්න</a></p>
    </div>
  </div>
