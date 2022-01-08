@@ -27,12 +27,19 @@
     </nav>
  <!-- END nav -->
  
- <section class="hero-wrap hero-wrap-2" style="background-image: url('/images/sl/About%20Us.png');">
+ <section class="hero-wrap hero-wrap-2" 
+  style="
+    background-image: url('/images/sl/About%20Us.png'); 
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;"
+  >
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text align-items-center justify-content-start">
       <div class="col-md-9 ftco-animate pb-5">
-       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
+       
        <!-- <h1 class="mb-0 bread">About Us</h1> -->
      </div>
    </div>
