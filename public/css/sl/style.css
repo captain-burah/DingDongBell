@@ -8606,7 +8606,7 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed; }
-  .hero-wrap .overlay {
+  /* .hero-wrap .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -8621,7 +8621,7 @@ h1, h2, h3, h4, h5,
     background: -o-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #f048bb 100%);
     background: -ms-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #f048bb 100%);
     background: linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #f048bb 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#f048bb', GradientType=1 ); }
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#f048bb', GradientType=1 ); } */
   .hero-wrap.hero-wrap-2 {
     height: 600px;
     position: relative;
@@ -9577,6 +9577,7 @@ textarea.form-control {
     color: #cccccc;
     color: #4986fc; }
   .testimony-wrap .text .star {
+    font-size: 1.4em;
     color: #fc9927; }
 
 .star {
