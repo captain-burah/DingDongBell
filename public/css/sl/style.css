@@ -9304,6 +9304,7 @@ textarea.form-control {
     padding: 3em;
     position: relative;
     z-index: 0;
+    background-position-y: -60px;
     overflow: hidden; }
     @media (max-width: 767.98px) {
       .ftco-intro .img {
@@ -9473,8 +9474,8 @@ textarea.form-control {
 .testimony-section {
   position: relative; }
   .testimony-section .container-2 {
-    margin: 0 0 0 auto !important;
-    max-width: 1290px; }
+    margin: 0 auto !important;
+    max-width: 1150px; }
   .testimony-section .overlay {
     background-size: cover;
     background-repeat: no-repeat;
