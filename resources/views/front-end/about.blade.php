@@ -29,7 +29,7 @@
  
  <section class="hero-wrap hero-wrap-2" 
   style="
-    background-image: url('/images/sl/About%20Us.png'); 
+    background-image: url('/images/sl/About%20banner%20New.png'); 
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -123,7 +123,8 @@
 
 
 <section class="ftco-section testimony-section bg-light">
- <div class="overlay" style="background-image: url(/images/sl/Background%2002.png);"></div>
+ <div class="overlay" 
+ style="background-image: url(/images/sl/Background%2002.png);"></div>
  <div class="container">
   <div class="row pb-4">
     <div class="col-md-7 heading-section ftco-animate">
@@ -134,8 +135,8 @@
 </div>
 <div class="container container-2">
   <div class="row ftco-animate">
-    <div class="col-md-12">
-      <div class="carousel-testimony owl-carousel">
+    <div class="col-md-6" style="margin-right: 80px;">
+      
         <div class="item">
           <div class="testimony-wrap py-4">
             <div class="text">
@@ -145,13 +146,13 @@
             <p class="mb-4">To make our students aware of the opportunities available in the field of Information and Communication Technology. Encouraging them to create their own path in the field of Information and Communication Technology and to be selected for one of universities in Sri Lanka by achieving A/L examination.</p>
             <div class="d-flex align-items-center">
              <div class="user-img" style="background-image: url(/images/sl/Vision.png)"></div>
-             <div class="pl-3">
+             <!-- <div class="pl-3">
               <p class="name">Roger Scott</p>
-              <!-- <span class="position">Marketing Manager</span> -->
-            </div>
+              <span class="position">Marketing Manager</span>
+            </div> -->
           </div>
         </div>
-      </div>
+      
     </div>
     <div class="item">
       <div class="testimony-wrap py-4">
@@ -162,10 +163,10 @@
         <p class="mb-4">We help our students to overcome struggles while learning the theory of ICT. We improve their practical knowledge and train them to prepare for the A/L examination. We improve their hidden skills and encourage them to get the best result.</p>
         <div class="d-flex align-items-center">
          <div class="user-img" style="background-image: url(/images/sl/Mission.png)"></div>
-         <div class="pl-3">
+         <!-- <div class="pl-3">
           <p class="name">Roger Scott</p>
-          <!-- <span class="position">Marketing Manager</span> -->
-        </div>
+          <span class="position">Marketing Manager</span>
+        </div> -->
       </div>
     </div>
   </div>
@@ -258,14 +259,14 @@
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
-       <div class="w-100 mb-4 mb-md-0">
+       <div class="w-100 mb-4 mb-md-0" style="padding-bottom: 50px;">
         <span class="subheading">Welcome to IT Panthiya</span>
         <h2 class="mb-4">IT Panthiya Online Learning Center</h2>
         <p>ලංකාවේ ඕනෑම ප්‍රදේශයක සිටින සිසුන්ට අපගේ මාර්ගගත ඉගෙනුම් පංති සඳහා සම්බන්ධ විය හැකිය. 6 ශ්‍රේණියේ සිට උසස් පෙළ දක්වා ICT පංති ඇති අතර ඉංග්‍රීසි සහ සිංහල මාධ්‍යය පංති වෙන් වෙන් වශයෙන් පැවැත්වේ.</p>
         <p>සිධාන්ත, ප්‍රයෝගික ක්‍රියාකාරකම් සහ මාසික පරීක්ෂණ වලින් සමන්විත online පංති මගින් වඩාත් ඕනෑම සිසුවකුට කැපවීමෙන්, සරලව හා සුරක්ෂිතව තම අධ්‍යාපන කටයුතු සිදු කිරීමට ඉඩ සලසයි.</p>
         <div class="d-flex video-image align-items-center mt-md-4">
-          <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/Online%20learning.png);">
-           <span class="fa fa-play-circle"></span>
+          <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/sl/online%20learning.png);">
+           <!-- <span class="fa fa-play-circle"></span> -->
          </a>
          <h4 class="ml-4">Online පංති මගින් නිවසේ සිටම ICT විෂය හදාරන්න</h4>
        </div>
@@ -316,73 +317,78 @@
 </section>
 
 <footer class="ftco-footer ftco-no-pt">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md pt-5">
-        <div class="ftco-footer-widget pt-md-5 mb-4">
-          <h2 class="ftco-heading-2">About</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-          </ul>
+    <div class="container">
+        <div class="row mb-5">
+        <div class="col-md pt-5">
+            <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">About</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
         </div>
-      </div>
-      <div class="col-md pt-5">
+    </div>
+    <!-- <div class="col-md pt-5">
         <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-          <h2 class="ftco-heading-2">Help Desk</h2>
-          <ul class="list-unstyled">
+        <h2 class="ftco-heading-2">Help Desk</h2>
+        <ul class="list-unstyled">
             <li><a href="#" class="py-2 d-block">Customer Care</a></li>
             <li><a href="#" class="py-2 d-block">Legal Help</a></li>
             <li><a href="#" class="py-2 d-block">Services</a></li>
             <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
             <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
             <li><a href="#" class="py-2 d-block">Call Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md pt-5">
-       <div class="ftco-footer-widget pt-md-5 mb-4">
+        </ul>
+    </div>
+    </div> -->
+    <div class="col-md pt-5">
+    <div class="ftco-footer-widget pt-md-5 mb-4">
         <h2 class="ftco-heading-2">Recent Courses</h2>
         <ul class="list-unstyled">
-          <li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
-          <li><a href="#" class="py-2 d-block">Web Design</a></li>
-          <li><a href="#" class="py-2 d-block">Business Studies</a></li>
-          <li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
-          <li><a href="#" class="py-2 d-block">Computer Technician</a></li>
-          <li><a href="#" class="py-2 d-block">Web Developer</a></li>
+            <li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
+            <li><a href="#" class="py-2 d-block">Web Design</a></li>
+            <li><a href="#" class="py-2 d-block">Business Studies</a></li>
+            <li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
+            <li><a href="#" class="py-2 d-block">Computer Technician</a></li>
+            <li><a href="#" class="py-2 d-block">Web Developer</a></li>
         </ul>
-      </div>
+    </div>
     </div>
     <div class="col-md pt-5">
-      <div class="ftco-footer-widget pt-md-5 mb-4">
-       <h2 class="ftco-heading-2">Have a Questions?</h2>
-       <div class="block-23 mb-3">
-         <ul>
-           <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-           <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </div>
- <div class="row">
-  <div class="col-md-12 text-center">
-
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <div class="ftco-footer-widget pt-md-5 mb-4">
+        <h2 class="ftco-heading-2">Have a Questions?</h2>
+        <div class="block-23 mb-3">
+            <ul>
+            <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
+        </ul>
     </div>
-  </div>
-</div>
-</footer>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12 text-center">
+        <p style="font-family: 'Caveat', cursive; font-weight: 400;">
+            a work of 
+            <a href="https://www.upwritsolutions.com" class="text-center text-decoration-none text-light" target="__blank">
+                UpWrit Solutions 
+            </a>
+        </p>
+        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        All rights reserved &copy;<script>document.write(new Date().getFullYear());</script> | <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    </div>
+    </div>
+    </div>
+    </footer>
 
 
 
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-</div>
+    </div>
 @endsection
