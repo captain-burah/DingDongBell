@@ -32,7 +32,7 @@ const routes = [
                 name: "admin-dashboard",
             },
             {
-                path: 'courses',
+                path: 'course',
                 components: {
                     adminchild: CourseMgt
                 },
