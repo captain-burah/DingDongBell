@@ -15,7 +15,11 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $target = Course::get();
+        $data=[
+            'data' => $target,
+        ];
+        return response()->json($data);
     }
 
     
@@ -73,8 +77,15 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $course = Course::find($id);
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'tutor' => 'required',
+            'status' => 'required',
+            'learning_outcomes' => 'required',
+        ]);
 
+        $course = Course::find($id);
         $course->name = $request->name;
         $course->tutor = $request->tutor;
         $course->description = $request->description;
