@@ -13,7 +13,7 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="/" class="nav-link">Home<br>මුල් පිටුව</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Course</a></li>
+            <li class="nav-item"><a href="/course" class="nav-link">Course</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Instructor</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             <li class="nav-item">
@@ -27,7 +27,7 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('/images/sl/BWH_4102.jpg');">
+    <div class="hero-wrap js-fullheight" style="background-image: url('/images/sl/Home Banner New.png');">
     <!-- <div class="overlay"></div> -->
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
         <div class="col-md-3 col-lg-2">
-            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/AL%20ICT.jpg);">
+            <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/AL%20Tuition.png);">
             <div class="text w-100 text-center">
                 <h3>උසස් පෙළ</h3>
                 <span>ICT</span>
@@ -77,7 +77,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2008.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2008%20Tuition.png);">
         <div class="text w-100 text-center">
             <h3>8 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
