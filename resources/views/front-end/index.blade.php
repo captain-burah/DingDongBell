@@ -13,7 +13,7 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="/" class="nav-link">Home<br>මුල් පිටුව</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="/course" class="nav-link">Course</a></li>
+            <li class="nav-item"><a href="/course" class="nav-link">Tuition</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Instructor</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             <li class="nav-item">
@@ -61,7 +61,7 @@
         </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/OL%20ICT.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/OL%20ICT%20Tuition.png);">
         <div class="text w-100 text-center">
             <h3>සාමාන්‍ය පෙළ </h3>
             <span>ICT</span>
@@ -69,7 +69,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2009.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2009%20Tuition.png);">
         <div class="text w-100 text-center">
             <h3>9 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -85,7 +85,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2007.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2007%20Tuition.png);">
         <div class="text w-100 text-center">
             <h3>7 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -93,7 +93,7 @@
     </a>
     </div>
     <div class="col-md-3 col-lg-2">
-        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2006.jpg);">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(/images/sl/Grade%2006%20Tuition.png);">
         <span class="text w-100 text-center">
             <h3>6 ශ්‍රේණිය</h3>
             <!-- <span>100 course</span> -->
@@ -118,7 +118,7 @@
         <div class="row">
         <div class="col-md-4 ftco-animate">
             <div class="project-wrap">
-                <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Sanjula.png);">
+                <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Sanjula%20New.png);">
                     <span class="price">A/L & O/L</span>
                 </a>
                 <div class="text p-4">
@@ -133,7 +133,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
         <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Nethuni.png);">
+            <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Nethuni%20New.png);">
                 <span class="price">Grade 09</span>
             </a>
             <div class="text p-4">
@@ -148,7 +148,7 @@
     </div>
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Subha.png);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Subha%20New.png);">
             <span class="price">Grade 08</span>
         </a>
         <div class="text p-4">
@@ -164,7 +164,7 @@
 
     <div class="col-md-4 ftco-animate">
     <div class="project-wrap">
-        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Shyami.png);">
+        <a href="#" class="img" style="background-image: url(/images/sl/Miss%20Shyami%20New.png);">
             <span class="price">Grade 07 & 06</span>
         </a>
         <div class="text p-4">

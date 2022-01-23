@@ -13,7 +13,7 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About<br>අපි ගැන</a></li>
-            <li class="nav-item"><a href="/course" class="nav-link">Course</a></li>
+            <li class="nav-item"><a href="/course" class="nav-link">Tuition</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Instructor</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             <li class="nav-item">
