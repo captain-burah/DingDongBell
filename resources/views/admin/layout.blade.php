@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-footer-fixed">
     <div class="wrapper" id="app">
         <div id="app">
             <main>
