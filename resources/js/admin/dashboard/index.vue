@@ -32,7 +32,7 @@
                         <div class="inner">
                             <h3>53</h3>
 
-                            <p>Instructors</p>
+                            <p>Courses</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
@@ -46,7 +46,7 @@
                         <div class="inner">
                             <h3>44</h3>
 
-                            <p>Bounce Rate</p>
+                            <p>Class Links</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
@@ -58,9 +58,9 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>65</h3>
+                            <h3>1</h3>
 
-                            <p>Unique Visitors</p>
+                            <p>Admins</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-pie-graph"></i>

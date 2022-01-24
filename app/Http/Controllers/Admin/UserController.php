@@ -18,7 +18,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $target = User::with('course')->get();
+        $data=[
+            'data' => $target,
+        ];
+        return response()->json($data);
     }
 
     /**
@@ -100,8 +104,43 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        try {
-            $user = User::find($id);
+        $validatedData = $request->validate([
+            'fname'  => 'required|string|max:191',
+            'lname'  => 'required|string|max:191',
+            'email'  => 'required|string|email|max:191|unique:users',
+            'password'  => 'required|string|min:8',
+            'contact'  => 'required',
+            'medium'  => 'required',
+            'status'  => 'required',
+            'course_id'  => 'required',
+        ]);
+        $course = Course::find($request->course_id);
+        $user = User::find($id);
+        $user->fname = $request->fname;
+        $user->lname = $request->lname;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->contact = $request->contact;
+        $user->medium = $request->medium;
+        $user->message = $request->message;
+        $user->status = $request->status;
+        $res=$course->users()->save($user);
+        
+        if ($res){
+            $data=[
+                'status'=>'1',
+                'msg'=>'success'
+            ];
+        }
+        else {
+            $data=[
+                'status'=>'0',
+                'msg'=>'fail'
+            ];
+        };
+        return response()->json($data);
+        //try {
+            //$user = User::find($id);
             // $user->fname = $request->fname;
             // $user->lname = $request->lname;
             // $user->email = $request->email;
@@ -112,11 +151,11 @@ class UserController extends Controller
             // $user->status = $request->status;
             // $res=$user->save();
 
-        } catch (\QueryException $e) {
+        //} catch (\QueryException $e) {
             
-            dd('Query Exception: ' . $e->getMessage());
+        //    dd('Query Exception: ' . $e->getMessage());
             
-        }
+       //}
         // $user = User::find($id);
 
         // if (!$user){
