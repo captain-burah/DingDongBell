@@ -27,7 +27,7 @@
     </nav>
     <!-- END nav -->
 	
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/sl/Tuition banner.png');">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/sl/Tuition Banner.png');">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -114,17 +114,17 @@
 						<h3 class="heading-sidebar">ICT Text Book & Workbook(English)</h3>
 						<ul class="papers-list">
 							<li><a href="#">Grade 11 ICT Text Book</a></li>
-							<li><a href="#">Grade 11 ICT Text Book</a></li>
+							<li><a href="#">Grade 11 ICT Work Book</a></li>
 							<li><a href="#">Grade 10 ICT Text Book</a></li>
-							<li><a href="#">Grade 10 ICT Text Book</a></li>
+							<li><a href="#">Grade 10 ICT Work Book</a></li>
 							<li><a href="#">Grade 9 ICT Text Book</a></li>
-							<li><a href="#">Grade 9 ICT Text Book</a></li>
+							<li><a href="#">Grade 9 ICT Work Book</a></li>
 							<li><a href="#">Grade 8 ICT Text Book</a></li>
-							<li><a href="#">Grade 8 ICT Text Book</a></li>
+							<li><a href="#">Grade 8 ICT Work Book</a></li>
 							<li><a href="#">Grade 7 ICT Text Book</a></li>
-							<li><a href="#">Grade 7 ICT Text Book</a></li>
+							<li><a href="#">Grade 7 ICT Work Book</a></li>
 							<li><a href="#">Grade 6 ICT Text Book</a></li>
-							<li><a href="#">Grade 6 ICT Text Book</a></li>
+							<li><a href="#">Grade 6 ICT Work Book</a></li>
 						</ul>
 					</div>
 
