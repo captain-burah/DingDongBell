@@ -9393,7 +9393,7 @@ textarea.form-control {
       background: #fff;
       border: 2px solid #fff !important; }
   .ftco-footer p {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8) !important; }
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.8); }
     .ftco-footer a:hover {
