@@ -27,7 +27,7 @@
     </nav>
     <!-- END nav -->
 	
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/sl/Tuition banner.png');">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/sl/Tuition Banner.png');">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -114,17 +114,17 @@
 						<h3 class="heading-sidebar">ICT Text Book & Workbook(English)</h3>
 						<ul class="papers-list">
 							<li><a href="#">Grade 11 ICT Text Book</a></li>
-							<li><a href="#">Grade 11 ICT Text Book</a></li>
+							<li><a href="#">Grade 11 ICT Work Book</a></li>
 							<li><a href="#">Grade 10 ICT Text Book</a></li>
-							<li><a href="#">Grade 10 ICT Text Book</a></li>
+							<li><a href="#">Grade 10 ICT Work Book</a></li>
 							<li><a href="#">Grade 9 ICT Text Book</a></li>
-							<li><a href="#">Grade 9 ICT Text Book</a></li>
+							<li><a href="#">Grade 9 ICT Work Book</a></li>
 							<li><a href="#">Grade 8 ICT Text Book</a></li>
-							<li><a href="#">Grade 8 ICT Text Book</a></li>
+							<li><a href="#">Grade 8 ICT Work Book</a></li>
 							<li><a href="#">Grade 7 ICT Text Book</a></li>
-							<li><a href="#">Grade 7 ICT Text Book</a></li>
+							<li><a href="#">Grade 7 ICT Work Book</a></li>
 							<li><a href="#">Grade 6 ICT Text Book</a></li>
-							<li><a href="#">Grade 6 ICT Text Book</a></li>
+							<li><a href="#">Grade 6 ICT Work Book</a></li>
 						</ul>
 					</div>
 
@@ -246,14 +246,14 @@
 	<footer class="ftco-footer ftco-no-pt">
     <div class="container">
         <div class="row mb-5">
-        <div class="col-md pt-5">
+        <div class="col-md pt-5 pr-5">
             <div class="ftco-footer-widget pt-md-5 mb-4">
             <h2 class="ftco-heading-2">About</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>IT Panthiya conducts classes for GCE A/Level & GCE O/Level students in both English and Sinhala mediums. Each student will be guided through a procedure that is aimed of obtaining good results for school term tests and for the GCE(A/L & O/L) examinations.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/company/it-panthiya" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/IT.Panthiya.SL/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/invites/contact/?i=gr5otwzfe06i&utm_content=ks6rfb2" target="_blank"><span class="fa fa-instagram"></span></a></li>
             </ul>
         </div>
     </div>
@@ -272,14 +272,14 @@
     </div> -->
     <div class="col-md pt-5">
     <div class="ftco-footer-widget pt-md-5 mb-4">
-        <h2 class="ftco-heading-2">Recent Courses</h2>
+        <h2 class="ftco-heading-2">Tuition Classes</h2>
         <ul class="list-unstyled">
-            <li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
-            <li><a href="#" class="py-2 d-block">Web Design</a></li>
-            <li><a href="#" class="py-2 d-block">Business Studies</a></li>
-            <li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
-            <li><a href="#" class="py-2 d-block">Computer Technician</a></li>
-            <li><a href="#" class="py-2 d-block">Web Developer</a></li>
+            <li><a href="/course" class="py-2 d-block">GCE Advanced Level ICT</a></li>
+            <li><a href="/course" class="py-2 d-block">GCE Ordinary Level ICT</a></li>
+            <li><a href="/course" class="py-2 d-block">ICT for Grade 09</a></li>
+            <li><a href="/course" class="py-2 d-block">ICT for Grade 08</a></li>
+            <li><a href="/course" class="py-2 d-block">ICT for Grade 07</a></li>
+            <li><a href="/course" class="py-2 d-block">ICT for Grade 06</a></li>
         </ul>
     </div>
     </div>
@@ -288,9 +288,9 @@
         <h2 class="ftco-heading-2">Have a Questions?</h2>
         <div class="block-23 mb-3">
             <ul>
-            <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
+            <li><span class="icon fa fa-map-marker"></span><span class="text">237/2, Perera Road, Ganemulla, Gampaha, Sri Lanka. PC: 11020</span></li>
+            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+94771133205 / +94719896700 / +94333132082</span></a></li>
+            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">Info.itpanthiya@gmail.com</span></a></li>
         </ul>
     </div>
     </div>
@@ -298,6 +298,7 @@
     </div>
     <div class="row">
     <div class="col-md-12 text-center">
+        <p class="text-center text-light">Copyright &copy;2022 All rights reserved | IT Panthiya – Institute for ICT</p>
         <p style="font-family: 'Caveat', cursive; font-weight: 400;">
             a work of 
             <a href="https://www.upwritsolutions.com" class="text-center text-decoration-none text-light" target="__blank">
