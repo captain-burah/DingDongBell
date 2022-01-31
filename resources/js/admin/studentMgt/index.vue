@@ -22,6 +22,9 @@
                         <form> 
                             <div class="card-body row">
                                 <div class="col-md-6">
+                                    <div class="text-sm text-danger" v-if="errors != ''">
+                                        <p v-for="error in errors" :key="error"><small>{{ error }}</small></p>
+                                    </div>
                                     <div class="form-group">
                                         <label for="exampleInputName1">First Name <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="exampleInputame1" placeholder="Han" v-model="form.fname">
@@ -342,7 +345,7 @@
                 .catch(function(error) {
                     if (error.response && error.response.status === 422) {
                         var data = [];
-                        for(const key in error.response.data.errors){
+                        for(const key in error.response.data.errors){ 
                             data.push(error.response.data.errors[key][0])
                         }
                         errors.value = data;
@@ -359,6 +362,7 @@
                         }); 
                     }
                 });
+
                 if(res.data.status === '1'){
                     Toast.fire({
                         icon: 'success',

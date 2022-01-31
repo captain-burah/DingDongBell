@@ -49,7 +49,7 @@ class UserController extends Controller
         $user->fname = $request->fname;
         $user->lname = $request->lname;
         $user->email = $request->email;
-        $user->password = $request->password;
+        $user->password = bcrypt($request->password);
         $user->contact = $request->contact;
         $user->medium = $request->medium;
         $user->message = $request->message;
@@ -107,24 +107,22 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'fname'  => 'required|string|max:191',
             'lname'  => 'required|string|max:191',
-            'email'  => 'required|string|email|max:191|unique:users',
-            'password'  => 'required|string|min:8',
-            'contact'  => 'required',
+            'email'  => 'required|string|email|max:191',
             'medium'  => 'required',
             'status'  => 'required',
             'course_id'  => 'required',
         ]);
-        $course = Course::find($request->course_id);
+        //$course = Course::find($request->course_id);
         $user = User::find($id);
         $user->fname = $request->fname;
         $user->lname = $request->lname;
         $user->email = $request->email;
-        $user->password = $request->password;
-        $user->contact = $request->contact;
         $user->medium = $request->medium;
         $user->message = $request->message;
         $user->status = $request->status;
-        $res=$course->users()->save($user);
+        $user->course_id = $request->course_id;
+        //$res=$course->users()->save($user);
+        $res=$user->save();
         
         if ($res){
             $data=[

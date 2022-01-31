@@ -25,14 +25,14 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link text-center">
       <span class="brand-text font-weight-light">IT-Panthiya | Institute for ICT</span>
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -88,6 +88,16 @@
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
+    </div>
+
+    <div class="sidebar-custom text-center">
+      <a href="#" class="btn btn-link text-center">
+        <strong>
+            <a href="https://upwritsolutions.com" class="text-white text-center" style="font-family: 'Caveat', cursive; font-weight: 500; font-size: 1.3em;">
+              a work of UpWrit
+            </a>
+        </strong> 
+      </a>
     </div>
     <!-- /.sidebar -->
   </aside>
