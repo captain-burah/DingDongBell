@@ -63,16 +63,16 @@
             <a href="/admin/panel/course" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Course Mgt
+                Class Mgt
               </p>
             </a>
           </li>
 
           <li class="nav-item my-2">
-            <a href="#" class="nav-link">
+            <a href="/admin/panel/link-mgt" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Online Class Link Mgt
+                Class-Link Mgt
               </p>
             </a>
           </li>

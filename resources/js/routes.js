@@ -7,6 +7,7 @@ import AdminPanel from './admin/panel.vue';
 import Dashboard from './admin/dashboard/index.vue';
 import CourseMgt from './admin/course/index.vue';
 import StudentMgt from './admin/studentMgt/index.vue';
+import LinkMgt from './admin/link/index.vue';
 
 // Student Components
 import StudentLogin from './students/login.vue';
@@ -49,6 +50,13 @@ const routes = [
                     adminchild: StudentMgt
                 },
                 name: "admin-student",
+            },
+            {
+                path: 'link-mgt',
+                components: {
+                    adminchild: LinkMgt
+                },
+                name: "admin-link",
             },
         ],
     },

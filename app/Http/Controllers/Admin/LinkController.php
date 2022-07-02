@@ -18,7 +18,11 @@ class LinkController extends Controller
      */
     public function index()
     {
-        //
+        $target = Link::get();
+        $data=[
+            'data' => $target,
+        ];
+        return response()->json($data);
     }
 
     /**
