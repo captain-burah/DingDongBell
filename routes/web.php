@@ -55,5 +55,5 @@ Route::prefix('students')->group(function () {
     Route::get('/{any?}', function () {
         return view('students.students');
     })->where('any', '^(?!api\/)[\/\w\.\,-]*')->name('student-login-page');
-});
+});  
 
